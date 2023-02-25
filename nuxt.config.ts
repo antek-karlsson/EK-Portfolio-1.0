@@ -1,5 +1,7 @@
 import eslintPlugin from 'vite-plugin-eslint';
 import svgLoader from 'vite-svg-loader';
+import UnpluginComponentsVite from 'unplugin-vue-components/vite';
+import IconsResolver from 'unplugin-icons/resolver';
 
 export default defineNuxtConfig({
   app: {
@@ -26,7 +28,7 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap',
         },
-        // { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
       ],
     },
   },
@@ -36,13 +38,24 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  modules: ['@vueuse/nuxt', ['@pinia/nuxt', { autoImports: ['defineStore'] }]],
+  modules: ['unplugin-icons/nuxt', '@vueuse/nuxt', ['@pinia/nuxt', { autoImports: ['defineStore'] }]],
   build: {
     transpile: ['gsap'],
   },
   css: ['@/assets/scss/common/index.scss'],
   vite: {
-    plugins: [eslintPlugin({ failOnError: false }), svgLoader()],
+    plugins: [
+      eslintPlugin({ failOnError: false }),
+      svgLoader(),
+      UnpluginComponentsVite({
+        dts: true,
+        resolvers: [
+          IconsResolver({
+            prefix: 'Icon',
+          }),
+        ],
+      }),
+    ],
     build: {
       target: 'esnext',
       commonjsOptions: {

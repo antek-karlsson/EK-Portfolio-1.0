@@ -29,11 +29,7 @@ module.exports = {
         allowModifiers: true,
       },
     ],
-    quotes: [
-      'error',
-      'single',
-      { allowTemplateLiterals: true, avoidEscape: true },
-    ],
+    quotes: ['error', 'single', { allowTemplateLiterals: true, avoidEscape: true }],
   },
   globals: {
     _: true,
