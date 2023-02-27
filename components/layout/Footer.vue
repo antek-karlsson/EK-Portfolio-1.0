@@ -4,10 +4,10 @@
     <a class="footer__link" href="mailto: ek.ewelinakarlsson@gmail.com">ek.ewelinakarlsson@gmail.com</a>
     <div class="footer__icons">
       <a href="https://www.behance.net/ewelinakarlsson" target="_blank">
-        <BehanceIcon />
+        <BehanceIcon class="footer__icon" />
       </a>
       <a href="https://www.linkedin.com/in/ewelinakarlsson/" target="_blank">
-        <LinkedinIcon />
+        <LinkedinIcon class="footer__icon" />
       </a>
     </div>
   </div>
@@ -20,29 +20,55 @@ import LinkedinIcon from '@/assets/icons/linkedin-icon.svg?component';
 
 <style lang="scss" scoped>
 .footer {
-  @include flex($direction: column, $justify: center, $align: center, $gap: 1rem);
-  padding: 4.8rem 15rem;
+  @include flex($direction: column, $justify: center, $align: center, $gap: 3.2rem);
+  padding: 2.5rem;
   background-color: $navy;
   color: $rosy-brown;
+
+  @include tablet-landscape {
+    padding: 3.2rem 6.4rem;
+  }
+
+  @include desktop {
+    padding: 4.8rem 15rem;
+  }
 
   &__heading {
     font-family: $playfair;
     font-weight: 700;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     line-height: 1.33;
+
+    @include tablet-landscape {
+      font-size: 3.2rem;
+    }
   }
 
   &__link {
     font-family: $lato;
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     line-height: 1.33;
     text-decoration: none;
     color: inherit;
+
+    @include tablet-landscape {
+      font-size: 2.4rem;
+    }
   }
 
   &__icons {
-    @include flex($direction: row, $justify: center, $align: flex-start, $gap: 1.5rem);
+    @include flex($direction: row, $justify: center, $align: flex-start, $gap: 3.2rem);
+  }
+
+  &__icon {
+    transition: all 0.3s ease-out;
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
   }
 }
 </style>
