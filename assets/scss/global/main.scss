@@ -1,3 +1,7 @@
 @import 'variables';
 @import 'responsive';
 @import 'mixins';
+
+body {
+  background-color: $white;
+}

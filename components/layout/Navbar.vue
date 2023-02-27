@@ -6,7 +6,7 @@
           <NuxtLink to="/"><img src="/img/home/logo.svg" alt="EK logo" /></NuxtLink>
         </div>
         <IconButton
-          v-if="isScreenMobile"
+          v-show="isScreenMobile"
           class="navbar__menu-icon"
           type="menu"
           :is-nav-open="isNavOpen"
@@ -141,9 +141,16 @@ watch(isScreenMobile, () => {
     font-weight: 500;
     font-size: 2rem;
     padding: 1rem;
+    transition: all 0.4s ease-out;
 
     &--active {
       border-bottom: 2px solid $navy;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $dark-gray;
+      }
     }
   }
 
