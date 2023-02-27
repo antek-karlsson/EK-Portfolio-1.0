@@ -38,10 +38,7 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  modules: ['unplugin-icons/nuxt', '@vueuse/nuxt', ['@pinia/nuxt', { autoImports: ['defineStore'] }]],
-  build: {
-    transpile: ['gsap'],
-  },
+  modules: ['unplugin-icons/nuxt', '@vueuse/nuxt', 'nuxt-swiper', ['@pinia/nuxt', { autoImports: ['defineStore'] }]],
   css: ['@/assets/scss/common/index.scss'],
   vite: {
     plugins: [
@@ -72,5 +69,9 @@ export default defineNuxtConfig({
   },
   imports: {
     dirs: ['composables/**'],
+  },
+  typescript: {
+    typeCheck: true,
+    strict: false,
   },
 });
