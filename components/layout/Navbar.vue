@@ -16,7 +16,11 @@
       <ClientOnly>
         <template v-if="!isScreenMobile">
           <div class="navbar__links">
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/projects' }" to="#">
+            <NuxtLink
+              class="navbar__link"
+              :class="{ 'navbar__link--active': currentRoute === '/projects' }"
+              to="/projects"
+            >
               projects
             </NuxtLink>
             <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="#">
@@ -32,16 +36,20 @@
         </template>
         <template v-if="isScreenMobile">
           <div class="navbar__links--mobile" :class="isNavOpen ? 'open' : 'closed'">
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/projects' }" to="/">
+            <NuxtLink
+              class="navbar__link"
+              :class="{ 'navbar__link--active': currentRoute === '/projects' }"
+              to="/projects"
+            >
               projects
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="/shop">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="#">
               about me
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="/about">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="#">
               resume
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/other' }" to="/custom">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/other' }" to="#">
               other work
             </NuxtLink>
           </div>
@@ -159,17 +167,17 @@ watch(isScreenMobile, () => {
     opacity: 0.98;
     background-color: rgba(249, 249, 249, 0.98);
     position: sticky;
-    height: 7.2rem;
+    height: 6rem;
     top: 125px;
     z-index: 2;
 
     @include tablet {
-      height: 9.6rem;
+      // height: 9.6rem;
       top: 189px;
     }
 
     @include tablet-landscape {
-      height: 12.8rem;
+      // height: 12.8rem;
       top: 139px;
     }
   }
