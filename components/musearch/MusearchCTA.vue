@@ -1,7 +1,7 @@
 <template>
   <div v-if="isScreenMobile" class="cta-mobile">
     <div class="cta-mobile__section cta-mobile__section--brand">
-      <h1 class="cta-mobile__section-title cta-mobile__section-title--brand">{{ brandTitle }}</h1>
+      <h2 class="cta-mobile__section-title cta-mobile__section-title--brand">{{ brandTitle }}</h2>
       <p class="cta-mobile__section-text cta-mobile__section-text--brand">{{ brandText }}</p>
     </div>
     <div class="cta-mobile__section">
@@ -11,7 +11,7 @@
   </div>
   <div v-else class="cta-desktop">
     <div class="cta-desktop__section cta-desktop__section--brand">
-      <h1 class="cta-desktop__section-title cta-desktop__section-title--brand">{{ brandTitle }}</h1>
+      <h2 class="cta-desktop__section-title cta-desktop__section-title--brand">{{ brandTitle }}</h2>
       <p class="cta-desktop__section-text cta-desktop__section-text--brand">{{ brandText }}</p>
     </div>
     <div class="cta-desktop__section">
