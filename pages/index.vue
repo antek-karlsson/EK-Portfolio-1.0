@@ -30,7 +30,7 @@ import { teasers } from '@/api/data/content/home/project-teasers';
   margin-bottom: 18.8rem;
   @include flex(column, center, center);
 
-  @include tablet-landscape {
+  @include desktop {
     margin: 0 auto;
   }
 }
