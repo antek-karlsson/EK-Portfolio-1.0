@@ -25,7 +25,7 @@ defineProps<{
 <style lang="scss" scoped>
 .project-teaser {
   @include flex(column, center, center, 2.4rem);
-  @include section-padding;
+  @include home-section-padding;
 
   @include tablet {
     @include flex(column, flex-start, flex-start, 2.4rem);

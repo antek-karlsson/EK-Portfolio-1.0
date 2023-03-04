@@ -14,7 +14,7 @@ import { content } from '@/api/data/content/home/hero';
 <style lang="scss" scoped>
 .hero {
   @include flex(column, flex-start, flex-start, 1.6rem);
-  @include section-padding;
+  @include home-section-padding;
   color: $black;
 
   &__title {
