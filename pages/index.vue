@@ -25,7 +25,7 @@ import { teasers } from '@/api/data/content/home/project-teasers';
 .home-page {
   height: 100vh;
   max-width: 1290px;
-  margin: 0 auto;
+  margin: 6rem auto;
   @include flex(column, center, center);
 }
 </style>
