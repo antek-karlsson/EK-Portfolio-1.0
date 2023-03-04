@@ -80,6 +80,10 @@ watch(
   { immediate: true },
 );
 
+watch(currentRoute, () => {
+  isNavOpen.value = false;
+});
+
 watch(isScreenMobile, () => {
   !isScreenMobile && isNavOpen.value === true ? (isNavOpen.value = false) : (isNavOpen.value = false);
 });
@@ -168,17 +172,15 @@ watch(isScreenMobile, () => {
     background-color: rgba(249, 249, 249, 0.98);
     position: sticky;
     height: 6rem;
-    top: 125px;
+    top: 124px;
     z-index: 2;
 
     @include tablet {
-      // height: 9.6rem;
-      top: 189px;
+      top: 188px;
     }
 
     @include tablet-landscape {
-      // height: 12.8rem;
-      top: 139px;
+      top: 138px;
     }
   }
 }
