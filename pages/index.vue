@@ -25,7 +25,13 @@ import { teasers } from '@/api/data/content/home/project-teasers';
 .home-page {
   height: 100vh;
   max-width: 1290px;
-  margin: 7rem auto;
+  margin: 0 auto;
+  margin-top: 7rem;
+  margin-bottom: 18.8rem;
   @include flex(column, center, center);
+
+  @include tablet-landscape {
+    margin: 0 auto;
+  }
 }
 </style>
