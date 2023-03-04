@@ -70,6 +70,7 @@ const { title, statistic, lightSections, darkSections, processHighlights, images
 
     @include tablet-landscape {
       max-width: 20rem;
+      align-self: center;
     }
 
     @include desktop {
