@@ -1,14 +1,15 @@
 <template>
   <div class="case-summary">
     <ProjectSection>
+      <NuxtLink class="case-summary__button" to="#">{{ actionButton }}</NuxtLink>
+    </ProjectSection>
+    <ProjectSection>
       <h3 class="case-summary__title">{{ title }}</h3>
       <ProjectSubSection v-for="(section, id) in lightSections" :key="id" :title="section.title">
-        <template #textBold>
-          <div v-if="section.subTitles">
-            <p v-for="(subtitle, idx) in section.subTitles" :key="idx">
-              {{ subtitle }}
-            </p>
-          </div>
+        <template v-if="section.subTitles" #textBold>
+          <p v-for="(subtitle, idx) in section.subTitles" :key="idx">
+            {{ subtitle }}
+          </p>
         </template>
         <template #textRegular>
           <p v-for="(text, idx) in section.texts" :key="idx">
@@ -16,6 +17,9 @@
           </p>
         </template>
       </ProjectSubSection>
+      <div class="case-summary__statistic">
+        <div v-html="statistic"></div>
+      </div>
     </ProjectSection>
     <ProjectSection is-dark double>
       <ProjectSubSection
@@ -37,7 +41,6 @@
         </template>
       </ProjectSubSection>
       <div class="case-summary__images">
-        <!-- <img class="case-summary__image" :src="`/img/musearch/${image.url}`" :alt="image.alt" /> -->
         <img
           v-for="(img, id) in images"
           :key="id"
@@ -47,20 +50,75 @@
         />
       </div>
     </ProjectSection>
+    <ProjectSection>
+      <div class="case-summary__highlights">
+        <div v-for="(highlight, id) in processHighlights" :key="id" class="case-summary__highlight">
+          <h5 class="case-summary__highlight-title">{{ highlight.title }}</h5>
+          <p class="case-summary__highlight-text">{{ highlight.text }}</p>
+        </div>
+      </div>
+    </ProjectSection>
   </div>
 </template>
 
 <script setup lang="ts">
 import { content } from '@/api/data/content/projects/musearch';
-const { title, statistic, lightSections, darkSections, processHighlights, images } = content.caseSummary;
+const { title, actionButton, statistic, lightSections, darkSections, processHighlights, images } = content.caseSummary;
 </script>
 
 <style lang="scss" scoped>
 .case-summary {
   @include flex(column, center, center, 0);
 
+  &__button {
+    display: flex;
+    padding: 1.6rem 2.4rem;
+    border: 0.2rem solid $sienna;
+    border-radius: 1.8rem;
+    text-decoration: none;
+    color: $sienna;
+    font-family: $lato;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 0.01rem;
+    align-self: center;
+    transition: all 0.3s ease-out;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $sienna;
+        color: $white-smoke;
+      }
+    }
+  }
+
   &__title {
     @include section-title;
+  }
+
+  &__statistic {
+    align-self: center;
+
+    :deep(h4) {
+      display: inline;
+      font-family: $playfair;
+      font-weight: 400;
+      font-size: 2.4rem;
+      line-height: 1.62;
+      letter-spacing: -0.05rem;
+      color: $black;
+    }
+
+    :deep(span) {
+      display: inline;
+      font-family: $lato;
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 1.46;
+      letter-spacing: -0.05rem;
+      color: $carbon;
+    }
   }
 
   &__solution {
@@ -103,6 +161,39 @@ const { title, statistic, lightSections, darkSections, processHighlights, images
     @include tablet-landscape {
       max-width: 100%;
     }
+  }
+
+  &__highlights {
+    @include flex(column, center, flex-start, 2.8rem);
+
+    @include tablet {
+      @include flex(row, space-between, flex-start);
+    }
+  }
+
+  &__highlight {
+    @include flex(column, center, flex-start, 1rem);
+
+    @include tablet {
+      max-width: 17.5rem;
+    }
+  }
+
+  &__highlight-title {
+    font-family: $lato;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+    color: $carbon;
+  }
+
+  &__highlight-text {
+    font-family: $lato;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $carbon;
   }
 }
 
