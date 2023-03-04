@@ -45,17 +45,23 @@ const brandText = content.cta.brand.text;
   }
 
   @include desktop {
-    height: 92.2rem;
     padding: 5.6rem 9.6rem;
   }
 
   @include desktop-lg {
     padding: 8rem 15rem;
     background-image: url('/img/musearch/musearch-cta-2467.png');
+    height: 90rem;
+  }
+
+  @include desktop-xl {
+    padding: 8rem 25.6rem;
+    height: 100rem;
   }
 
   @include desktop-2xl {
-    height: 164.5rem;
+    padding: 8rem 46rem;
+    height: 180rem;
   }
 
   &__section {
@@ -81,7 +87,7 @@ const brandText = content.cta.brand.text;
     line-height: 1.33;
     letter-spacing: -0.05em;
     color: $white-smoke;
-    margin-bottom: 28rem;
+    margin-bottom: 24rem;
 
     @include tablet {
       font-size: 4.8rem;
@@ -102,9 +108,13 @@ const brandText = content.cta.brand.text;
     font-family: $lato;
     font-weight: 300;
     font-size: 1.6rem;
-    line-height: 1.33;
+    line-height: 1.5;
     letter-spacing: 0.01em;
     color: $white-smoke;
+
+    @include desktop {
+      font-size: 2rem;
+    }
 
     &--brand {
       line-height: 1.75;
