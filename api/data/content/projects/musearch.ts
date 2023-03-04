@@ -14,10 +14,11 @@ export const content = {
   },
   caseSummary: {
     title: 'Case summary',
-    statistic: {
-      main: 'There are about 55,000 museums in 202 countries',
-      sub: 'according to the Museums of the World',
-    },
+    actionButton: 'Skip ahead to final design',
+    statistic: `
+      <h4>"There are about <strong>55,000</strong> museums in <strong>202</strong> countries"</h4>
+      <span> - according to the Museums of the World</span>
+      `,
     lightSections: [
       {
         title: 'Product vision',
@@ -50,11 +51,11 @@ export const content = {
     ],
     images: [
       { url: 'case-summary-1.png', alt: 'Onboarding step 1' },
-      { url: 'case-summary-1.png', alt: 'Onboarding step 2' },
-      { url: 'case-summary-1.png', alt: 'Onboarding step 3' },
-      { url: 'case-summary-1.png', alt: 'Onboarding step 4' },
-      { url: 'case-summary-1.png', alt: 'Onboarding step 5' },
-      { url: 'case-summary-1.png', alt: 'Onboarding step 6' },
+      { url: 'case-summary-2.png', alt: 'Onboarding step 2' },
+      { url: 'case-summary-3.png', alt: 'Onboarding step 3' },
+      { url: 'case-summary-4.png', alt: 'Onboarding step 4' },
+      { url: 'case-summary-5.png', alt: 'Onboarding step 5' },
+      { url: 'case-summary-6.png', alt: 'Onboarding step 6' },
     ],
     processHighlights: [
       {
