@@ -94,6 +94,7 @@ watch(isScreenMobile, () => {
   position: sticky;
   top: 0;
   background-color: $white;
+  z-index: 2;
 
   &__content {
     width: 100%;
