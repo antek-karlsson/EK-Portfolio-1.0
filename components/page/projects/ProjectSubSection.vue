@@ -1,6 +1,6 @@
 <template>
   <div class="sub-section" :class="{ 'sub-section--dark': isDark }">
-    <h4 class="sub-section__title" :class="{ 'sub-section__title--dark': isDark }">{{ title }}</h4>
+    <h4 v-if="title !== ''" class="sub-section__title" :class="{ 'sub-section__title--dark': isDark }">{{ title }}</h4>
     <div v-if="$slots.textBold" class="sub-section__bold" :class="{ 'sub-section__bold--dark': isDark }">
       <slot name="textBold" />
     </div>
