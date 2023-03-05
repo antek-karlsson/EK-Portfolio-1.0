@@ -2,6 +2,7 @@
   <div class="projects">
     <MusearchCTA />
     <CaseSummary />
+    <DiscoveryAndIdeation />
   </div>
 </template>
 
