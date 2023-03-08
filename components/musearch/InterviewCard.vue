@@ -29,7 +29,7 @@ defineProps<Props>();
   @include flex(column, flex-start, flex-start, 2.4rem);
   max-width: 55.2rem;
   width: 100%;
-  // padding: 0 5rem;
+  padding: 5rem 0;
 
   &__title {
     align-self: center;
