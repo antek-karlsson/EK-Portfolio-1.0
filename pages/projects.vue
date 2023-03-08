@@ -3,6 +3,7 @@
     <MusearchCTA />
     <CaseSummary />
     <DiscoveryAndIdeation />
+    <CustomerJourney />
   </div>
 </template>
 
