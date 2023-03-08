@@ -261,4 +261,66 @@ export const content = {
       },
     ],
   },
+  customerJourney: {
+    title: 'So, who are the user personas?',
+    text: `I created two characters based upon interviews to further understand users' needs`,
+    personas: [
+      {
+        name: 'average tourist',
+        motto: '"Ok, we can go"',
+        image: {
+          url: 'average-tourist.png',
+          alt: 'Average tourist persona',
+        },
+        properties: [
+          {
+            name: 'Behaviours:',
+            text: 'limited time, wants to have time for various activities during their vacation',
+          },
+          {
+            name: 'Goals:',
+            text: `wants to visit "must-see", doesn't want to waste time in lines`,
+          },
+          {
+            name: 'Needs:',
+            text: 'searching and scheduling according to available information and limited time, quick access and everything in one place',
+          },
+        ],
+      },
+      {
+        name: 'avid art lover',
+        motto: `"I'd love to go!"`,
+        image: {
+          url: 'art-lover.png',
+          alt: 'Art lover persona',
+        },
+        properties: [
+          {
+            name: 'Behaviours:',
+            text: 'time-poor, has problem of keeping up to date with news from museums due to time-comsuming research, knows his interests',
+          },
+          {
+            name: 'Goals:',
+            text: 'wants to discover more and broaden interests, be updated',
+          },
+          {
+            name: 'Needs:',
+            text: 'recommendations based on personalized lists, notifications',
+          },
+        ],
+      },
+    ],
+    journeyMaps: [
+      {
+        urlBig: 'average-tourist-journey-big.png',
+        urlSmall: 'average-tourist-journey-small.png',
+        alt: 'Average tourist journey map',
+      },
+      {
+        urlBig: 'art-lover-journey-big.png',
+        urlSmall: 'art-lover-journey-small.png',
+        alt: 'Art lover journey map',
+      },
+    ],
+  },
 };
