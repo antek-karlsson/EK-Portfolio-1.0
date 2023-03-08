@@ -41,9 +41,8 @@
           <div class="discovery-ideation__interviews-swiper">
             <ClientOnly>
               <Swiper
-                loop
                 :modules="modules"
-                :slides-per-view="isScreenMobile ? 1 : 2"
+                :slides-per-view="isScreenMobile ? 1 : 1.5"
                 :space-between="50"
                 :pagination="{ clickable: true }"
                 navigation
@@ -128,15 +127,28 @@ function setSwiper(swiperInstance: HTMLElement) {
     :deep(.swiper-button-prev),
     :deep(.swiper-button-next) {
       color: $navy;
-      top: 2.25rem;
+      top: 1.3rem;
+    }
+
+    :deep(.swiper-button-prev::after),
+    :deep(.swiper-button-next::after) {
+      font-size: 2.4rem;
     }
 
     :deep(.swiper-button-prev) {
       left: -0;
+
+      @include tablet {
+        left: 12rem;
+      }
     }
 
     :deep(.swiper-button-next) {
       right: 0;
+
+      @include tablet {
+        right: 12rem;
+      }
     }
 
     :deep(.swiper-pagination) {
@@ -146,8 +158,8 @@ function setSwiper(swiperInstance: HTMLElement) {
     }
 
     :deep(.swiper-pagination-bullet) {
-      width: 1.4rem;
-      height: 1.4rem;
+      width: 0.8rem;
+      height: 0.8rem;
     }
 
     :deep(.swiper-pagination-bullet-active) {
