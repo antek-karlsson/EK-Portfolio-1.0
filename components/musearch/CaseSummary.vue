@@ -71,26 +71,7 @@ const { title, actionButton, statistic, lightSections, darkSections, processHigh
   @include flex(column, center, center, 0);
 
   &__button {
-    display: flex;
-    padding: 1.6rem 2.4rem;
-    border: 0.2rem solid $sienna;
-    border-radius: 1.8rem;
-    text-decoration: none;
-    color: $sienna;
-    font-family: $lato;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.33;
-    letter-spacing: 0.01rem;
-    align-self: center;
-    transition: all 0.3s ease-out;
-
-    @media (hover: hover) {
-      &:hover {
-        background-color: $sienna;
-        color: $white-smoke;
-      }
-    }
+    @include base-button;
   }
 
   &__title {
