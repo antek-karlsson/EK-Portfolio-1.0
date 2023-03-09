@@ -4,6 +4,7 @@
     <CaseSummary />
     <DiscoveryAndIdeation />
     <CustomerJourney />
+    <IdeaPrioritisation />
   </div>
 </template>
 

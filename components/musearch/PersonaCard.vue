@@ -9,6 +9,9 @@
         <span class="persona-card__property-text">{{ property.text }}</span>
       </p>
     </div>
+    <button v-if="!forMobile" class="persona-card__button" type="button" @click="$emit('click')">
+      View Customer Journey Map
+    </button>
   </div>
 </template>
 
@@ -24,9 +27,16 @@ interface Props {
   name: string;
   motto: string;
   properties: Property[];
+  forMobile?: boolean;
 }
 
-defineProps<Props>();
+withDefaults(defineProps<Props>(), {
+  forMobile: false,
+});
+
+defineEmits<{
+  (e: 'click'): void;
+}>();
 </script>
 
 <style lang="scss" scoped>
@@ -76,6 +86,10 @@ defineProps<Props>();
   &__property-text {
     font-weight: 300;
     margin-left: 0.5rem;
+  }
+
+  &__button {
+    @include base-button;
   }
 }
 </style>
