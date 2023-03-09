@@ -24,6 +24,7 @@
                 :name="persona.name"
                 :motto="persona.motto"
                 :properties="persona.properties"
+                for-mobile
               />
             </SwiperSlide>
           </Swiper>
@@ -37,6 +38,7 @@
             :name="persona.name"
             :motto="persona.motto"
             :properties="persona.properties"
+            @click="journeySwiper?.slideTo(personaId)"
           />
         </div>
       </ProjectSection>
@@ -170,9 +172,25 @@ function setJourneySwiper(swiperInstance: HTMLElement) {
     }
 
     :deep(.swiper-pagination) {
-      bottom: 2.5rem;
+      bottom: 2rem;
       height: 0.1rem;
       margin: 0 auto;
+
+      @include desktop {
+        bottom: 2.1rem;
+      }
+
+      @include desktop-lg {
+        bottom: 2.1rem;
+      }
+
+      @include desktop-xl {
+        bottom: 2.3rem;
+      }
+
+      @include desktop-2xl {
+        bottom: 2.4rem;
+      }
     }
 
     :deep(.swiper-pagination-bullet) {
