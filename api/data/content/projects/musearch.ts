@@ -323,4 +323,30 @@ export const content = {
       },
     ],
   },
+  ideaPrioritisation: {
+    title: 'Idea Prioritisation',
+    text: 'Hence, I identified the opportunity areas for Musearch:',
+    ideas: [
+      {
+        title: 'Searching as the heart of the application.',
+        items: ['User-specific, detailed filtering of results', 'Precise location for searching "here and now"'],
+      },
+      {
+        title: 'Easy to use for everyone, everywhere.',
+        items: [
+          'Quick process from selecting a museum to getting a ticket',
+          'Personalized interests and favourites',
+          'Accessibility for all age groups',
+        ],
+      },
+      {
+        title: 'Opportunity for deeper involvment.',
+        items: [
+          'Get personalized recommendation',
+          'Access to multiple sources to increase interest in the arts',
+          'Notifications about exhibitions and events',
+        ],
+      },
+    ],
+  },
 };
