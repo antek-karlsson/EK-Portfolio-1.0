@@ -349,4 +349,53 @@ export const content = {
       },
     ],
   },
+  prototyping: {
+    title: 'Prototyping',
+    texts: [
+      'After research and prioritisation of ideas I split my story into a few major user scenarios: registration, finding museum through search by location and making a purchase.',
+      'Then I started digging deeper sketching, wireframing and developing other features. The below previews show major steps taken in the prototyping stage.',
+    ],
+    subSections: [
+      {
+        title: 'USER FLOWS',
+        texts: ['Major user scenarios allowed me to focus on the specific flows.'],
+        images: [
+          {
+            urlSmall: 'user-flow-1-small.png',
+            urlBig: 'user-flow-1-big.png',
+            alt: 'User flow - registration',
+          },
+          {
+            urlSmall: 'user-flow-2-small.png',
+            urlBig: 'user-flow-2-big.png',
+            alt: 'User flow - search',
+          },
+          {
+            urlSmall: 'user-flow-3-small.png',
+            urlBig: 'user-flow-3-big.png',
+            alt: 'User flow - purchase',
+          },
+        ],
+      },
+      {
+        title: 'SKETCHING',
+        texts: [
+          'After creating user flows I started sketching low-fidelity screens. It helped me to examine and rethink my ideas before putting everything together.',
+        ],
+        image: { urlSmall: 'sketching-small.png', urlBig: 'sketching-big.png', alt: 'Musearch - sketching' },
+      },
+      {
+        title: 'WIREFRAMING',
+        texts: [
+          'After putting all the ideas on paper, I started to organize the elements of the interface and added more details by turning my sketches into wireframes in Figma. I focused on conveying the overall direction and hierarchy of UI. It gave me an outline of structure and layout of app. Wireframes helped me to test my concepts and understand how users will navigate my product before applying visual styles.',
+          'The next step was to create mid-fidelity prototype. The main goal was to detect possible problems as soon as possible before design details and interactions were at an advanced stage.',
+        ],
+        image: {
+          urlSmall: 'wireframes-small.png',
+          urlBig: 'wireframes-big.png',
+          alt: 'Musearch - wireframes',
+        },
+      },
+    ],
+  },
 };
