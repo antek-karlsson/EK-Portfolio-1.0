@@ -5,6 +5,7 @@
     <DiscoveryAndIdeation />
     <CustomerJourney />
     <IdeaPrioritisation />
+    <Prototyping />
   </div>
 </template>
 
