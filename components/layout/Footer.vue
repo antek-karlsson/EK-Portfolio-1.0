@@ -21,6 +21,7 @@ import LinkedinIcon from '@/assets/icons/linkedin-icon.svg?component';
 <style lang="scss" scoped>
 .footer {
   @include flex($direction: column, $justify: center, $align: center, $gap: 3.2rem);
+  width: 100%;
   padding: 2.5rem;
   background-color: $navy;
   color: $rosy-brown;
