@@ -29,7 +29,11 @@
             </Swiper>
           </ClientOnly>
         </div>
-        <div v-if="section.image" class="prototyping__section-image">
+        <div
+          v-if="section.image"
+          class="prototyping__section-image"
+          :class="section.title === 'SKETCHING' ? 'prototyping__section-image--sketching' : ''"
+        >
           <img
             :src="`/img/musearch/${isScreenTablet ? section.image.urlSmall : section.image.urlBig}`"
             :alt="section.image?.alt"
@@ -161,6 +165,12 @@ function setSwiper(swiperInstance: HTMLElement) {
       overflow-x: hidden;
       overflow-y: hidden;
 
+      img {
+        width: 100%;
+      }
+    }
+
+    &--sketching {
       img {
         width: 100%;
       }
