@@ -451,4 +451,196 @@ export const content = {
       },
     ],
   },
+  finalDesigns: {
+    title: 'Final designs',
+    subSections: [
+      {
+        title: 'Onboarding',
+        text: 'Welcome screen and beginning of onboarding with with short content describing the advantages of the application.',
+        images: [
+          {
+            alt: 'Musearch - onboarding step 1',
+            url: 'onboarding-1.png',
+          },
+          {
+            alt: 'Musearch - onboarding step 2',
+            url: 'onboarding-2.png',
+          },
+          {
+            alt: 'Musearch - onboarding step 3',
+            url: 'onboarding-3.png',
+          },
+          {
+            alt: 'Musearch - onboarding step 4',
+            url: 'onboarding-4.png',
+          },
+        ],
+      },
+      {
+        title: 'Registration',
+        text: 'The stages of creating an account are shown on progress bars, quick registration and then personalization of the user by choosing interests. To make it easier for the user to create an account, when password input is activated, the password security rules are shown.',
+        images: [
+          {
+            alt: 'Musearch - registration step 1',
+            url: 'registration-1.png',
+          },
+          {
+            alt: 'Musearch - registration step 2',
+            url: 'registration-2.png',
+          },
+          {
+            alt: 'Musearch - registration step 3',
+            url: 'registration-3.png',
+          },
+          {
+            alt: 'Musearch - registration step 4',
+            url: 'registration-4.png',
+          },
+          {
+            alt: 'Musearch - registration step 5',
+            url: 'registration-5.png',
+          },
+          {
+            alt: 'Musearch - registration step 6',
+            url: 'registration-6.png',
+          },
+          {
+            alt: 'Musearch - registration step 7',
+            url: 'registration-7.png',
+          },
+          {
+            alt: 'Musearch - registration step 8',
+            url: 'registration-8.png',
+          },
+        ],
+      },
+      {
+        title: 'Searching by location',
+        text: `Location-based search is the default search method available on the application's home page. After entering the city, available facilities appear. The results can be filtered.`,
+        images: [
+          {
+            alt: 'Musearch - search by location step 1',
+            url: 'search-location-1.png',
+          },
+          {
+            alt: 'Musearch - search by location step 2',
+            url: 'search-location-2.png',
+          },
+          {
+            alt: 'Musearch - search by location step 3',
+            url: 'search-location-3.png',
+          },
+        ],
+      },
+      {
+        title: 'Admission',
+        text: 'After choosing a museum, we can get information about opening hours, address and ticket prices. We have access to guides, maps and visit tips. When we decide to visit, we see a preview of the calendar to choose the date and we can choose the number of tickets for each age group. We still have quick access to the most important information related to a visit to the museum.',
+        images: [
+          {
+            alt: 'Musearch - admission step 1',
+            url: 'admission-1.png',
+          },
+          {
+            alt: 'Musearch - admission step 2',
+            url: 'admission-2.png',
+          },
+          {
+            alt: 'Musearch - admission step 3',
+            url: 'admission-3.png',
+          },
+        ],
+      },
+      {
+        title: 'Purchasing tickets and checkout',
+        subSections: [
+          {
+            text: 'To streamline the process of purchasing tickets, we go straight to checkout. Logged in users have the option to add their payment card for future transactions to make the purchase even more convenient. After the transaction is processed, a confirmation appears. We can go straight to the qr code, which is our purchased tickets. On the screen with the QR code (this screen is also accessible from the bottom navigation) we have access to the most important information and recommended exhibits.',
+            images: [
+              {
+                alt: 'Musearch - checkout step 1',
+                url: 'checkout-1.png',
+              },
+              {
+                alt: 'Musearch - checkout step 2',
+                url: 'checkout-2.png',
+              },
+            ],
+          },
+          {
+            text: 'If we do not have active tickets, we can go straight to search from this view or see available recommendations.',
+            images: [
+              {
+                alt: 'Musearch - checkout step 3',
+                url: 'checkout-3.png',
+              },
+              {
+                alt: 'Musearch - checkout step 4',
+                url: 'checkout-4.png',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Advanced search',
+        text: 'The advanced search option allows you to search by keywords. We can, for example, find a museum with an exhibition of a specific artist.',
+        images: [
+          {
+            alt: 'Musearch - advanced search step 1',
+            url: 'search-advanced-1.png',
+          },
+          {
+            alt: 'Musearch - advanced search step 2',
+            url: 'search-advanced-2.png',
+          },
+          {
+            alt: 'Musearch - advanced search step 3',
+            url: 'search-advanced-3.png',
+          },
+          {
+            alt: 'Musearch - advanced search step 4',
+            url: 'search-advanced-4.png',
+          },
+          {
+            alt: 'Musearch - advanced search step 5',
+            url: 'search-advanced-5.png',
+          },
+        ],
+      },
+      {
+        title: 'Personalization',
+        subSections: [
+          {
+            images: [
+              {
+                alt: 'Musearch - personalization 1',
+                url: 'personalization-1.png',
+              },
+              {
+                alt: 'Musearch - personalization 2',
+                url: 'personalization-2.png',
+              },
+            ],
+          },
+          {
+            text: 'The user can edit their profile picture, account information, payment and security settings. The user also has access to the preview of recently visited museums and has the option of selecting areas of interest.',
+            images: [
+              {
+                alt: 'Musearch - personalization 3',
+                url: 'personalization-3.png',
+              },
+              {
+                alt: 'Musearch - personalization 4',
+                url: 'personalization-4.png',
+              },
+              {
+                alt: 'Musearch - personalization 5',
+                url: 'personalization-5.png',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 };
