@@ -9,6 +9,7 @@
     <Branding />
     <LoFiPrototype />
     <Outcomes />
+    <FinalDesigns />
   </div>
 </template>
 
