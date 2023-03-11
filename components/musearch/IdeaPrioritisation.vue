@@ -31,7 +31,7 @@ const { title, text, ideas } = content.ideaPrioritisation;
   @include flex(column, center, center, 4.8rem);
 
   @include tablet-landscape {
-    @include flex(column, space-between, flex-start, 4.8rem);
+    @include flex(column, space-between, center, 4.8rem);
   }
 
   &__title {
@@ -78,7 +78,6 @@ const { title, text, ideas } = content.ideaPrioritisation;
   &__ideas-card-text {
     list-style-type: disc;
     margin-left: 1em;
-    // list-style-position: inside;
     font-family: $lato;
     font-weight: 300;
     font-size: 2rem;

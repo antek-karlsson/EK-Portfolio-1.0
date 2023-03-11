@@ -391,7 +391,7 @@ export const content = {
           'The next step was to create mid-fidelity prototype. The main goal was to detect possible problems as soon as possible before design details and interactions were at an advanced stage.',
         ],
         image: {
-          urlSmall: 'wireframes-big.png',
+          urlSmall: 'wireframes-small.png',
           urlBig: 'wireframes-big.png',
           alt: 'Musearch - wireframes',
         },
@@ -433,5 +433,22 @@ export const content = {
       url: 'lo-fi-prototype.png',
       alt: 'Musearch - low fidelity prototype',
     },
+  },
+  outcomes: {
+    title: 'Outcomes',
+    subSections: [
+      {
+        title: 'How did potential users react?',
+        text: 'High-fidelity prototype has been tested on 6 users in order to evaluate the expected functionalities and visual style. They could go through basic user flows and check micro-interactions. I received almost entirely positive feedback. Users loved the idea, visual style, two ways to search, personalization (Favourities, interests, recommendations etc.) and quick and easy way to buy tickets. An often mentioned advantage was one QR code for many tickets in the case of a family or group. However, all users came to the conclusion that the problem could be making the application available and widespread everywhere.',
+      },
+      {
+        title: 'What are my thoughts?',
+        text: 'Based on the finding from both research and potential users’ opinions I were able to locate and make minor adjustments. In order for this application to make sense as a product, it is necessary to integrate it with cultural institutions and facilities, both private and public. Possible further development would require strong business case and investors.',
+      },
+      {
+        title: 'Next steps',
+        text: 'In order to develop the application, it’s good to take into account additional user needs, called "nice to have" features. This will increase the application potential and competitiveness. These include reviews, loyalty and membership programs, educational features. ',
+      },
+    ],
   },
 };
