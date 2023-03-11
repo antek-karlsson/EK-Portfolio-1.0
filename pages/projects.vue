@@ -6,6 +6,7 @@
     <CustomerJourney />
     <IdeaPrioritisation />
     <Prototyping />
+    <Branding />
   </div>
 </template>
 
