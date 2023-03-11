@@ -1,5 +1,5 @@
 <template>
-  <div class="final-designs">
+  <div id="final-design" class="final-designs">
     <ProjectSection is-dark>
       <h3 class="final-designs__title">{{ title }}</h3>
       <div v-for="(section, sectionId) in subSections" :key="sectionId" class="final-designs__section">
@@ -32,12 +32,26 @@
         </div>
       </div>
     </ProjectSection>
+    <ProjectSection>
+      <button class="final-designs__button" @click="scrollTop">Back to top</button>
+    </ProjectSection>
   </div>
 </template>
 
 <script setup lang="ts">
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
 import { content } from '@/api/data/content/projects/musearch';
 const { title, subSections } = content.finalDesigns;
+
+if (process.client) {
+  gsap.registerPlugin(ScrollToPlugin);
+}
+
+function scrollTop() {
+  gsap.to(window, { duration: 0.01, scrollTo: { y: 'body', offsetY: 0 } });
+}
 </script>
 
 <style lang="scss" scoped>
@@ -47,8 +61,12 @@ const { title, subSections } = content.finalDesigns;
   }
 
   &__section,
-  &__section-double,
   &__section-double-sub {
+    @include flex(column, flex-start, flex-start, 6.8rem);
+    width: 100%;
+  }
+
+  &__section-double {
     @include flex(column, flex-start, center, 6.8rem);
     max-width: 100%;
   }
@@ -75,6 +93,42 @@ const { title, subSections } = content.finalDesigns;
         max-width: 26.3rem;
       }
     }
+  }
+
+  &__button {
+    @include base-button;
+  }
+
+  :deep(.project-section) {
+    padding-inline: 1.2rem;
+
+    @include tablet {
+      padding: 6.4rem 3.2rem;
+    }
+
+    @include tablet-landscape {
+      padding: 6.4rem 6.4rem;
+    }
+
+    @include desktop {
+      padding: 6.4rem 12.8rem;
+    }
+
+    @include desktop-lg {
+      padding: 6.4rem 17rem;
+    }
+
+    @include desktop-xl {
+      padding: 6.4rem 38.4rem;
+    }
+
+    @include desktop-2xl {
+      padding: 6.4rem 76.8rem;
+    }
+  }
+
+  :deep(.sub-section) {
+    align-self: flex-start;
   }
 }
 </style>

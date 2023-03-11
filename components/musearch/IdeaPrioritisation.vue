@@ -35,6 +35,7 @@ const { title, text, ideas } = content.ideaPrioritisation;
   }
 
   &__title {
+    align-self: flex-start;
     @include section-title('dark');
   }
 
@@ -84,6 +85,10 @@ const { title, text, ideas } = content.ideaPrioritisation;
     line-height: 1.25;
     letter-spacing: -0.01em;
     color: $white-smoke;
+  }
+
+  :deep(.sub-section--dark) {
+    align-self: flex-start;
   }
 }
 </style>

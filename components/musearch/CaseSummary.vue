@@ -1,7 +1,7 @@
 <template>
   <div class="case-summary">
     <ProjectSection>
-      <NuxtLink class="case-summary__button" to="#">{{ actionButton }}</NuxtLink>
+      <button class="case-summary__button" @click="scrollToFinalDesign">{{ actionButton }}</button>
     </ProjectSection>
     <ProjectSection>
       <h3 class="case-summary__title">{{ title }}</h3>
@@ -62,8 +62,19 @@
 </template>
 
 <script setup lang="ts">
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
 import { content } from '@/api/data/content/projects/musearch';
 const { title, actionButton, statistic, lightSections, darkSections, processHighlights, images } = content.caseSummary;
+
+if (process.client) {
+  gsap.registerPlugin(ScrollToPlugin);
+}
+
+function scrollToFinalDesign() {
+  gsap.to(window, { duration: 0.01, scrollTo: { y: '#final-design', offsetY: 200 } });
+}
 </script>
 
 <style lang="scss" scoped>

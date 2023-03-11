@@ -54,6 +54,7 @@ withDefaults(defineProps<Props>(), {
   &__content {
     @include flex(column, center, space-between, 6.4rem);
     max-width: 144rem;
+    margin: 0 auto;
 
     &--row {
       @include flex(column, center, center, 5rem);

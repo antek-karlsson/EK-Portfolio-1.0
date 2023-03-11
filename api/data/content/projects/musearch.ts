@@ -601,10 +601,6 @@ export const content = {
             alt: 'Musearch - advanced search step 4',
             url: 'search-advanced-4.png',
           },
-          {
-            alt: 'Musearch - advanced search step 5',
-            url: 'search-advanced-5.png',
-          },
         ],
       },
       {
