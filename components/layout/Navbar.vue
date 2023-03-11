@@ -91,8 +91,10 @@ watch(isScreenMobile, () => {
 
 <style lang="scss" scoped>
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   background-color: $white;
   z-index: 2;
 
@@ -171,9 +173,11 @@ watch(isScreenMobile, () => {
     width: 100%;
     opacity: 0.98;
     background-color: rgba(249, 249, 249, 0.98);
-    position: sticky;
+    position: fixed;
     height: 6rem;
     top: 124px;
+    left: 0;
+    right: 0;
     z-index: 2;
 
     @include tablet {

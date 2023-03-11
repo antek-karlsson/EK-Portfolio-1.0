@@ -74,4 +74,7 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: false,
   },
+  build: {
+    transpile: ['gsap'],
+  },
 });

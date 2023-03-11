@@ -382,7 +382,7 @@ export const content = {
         texts: [
           'After creating user flows I started sketching low-fidelity screens. It helped me to examine and rethink my ideas before putting everything together.',
         ],
-        image: { urlSmall: 'sketching-small.png', urlBig: 'sketching-big.png', alt: 'Musearch - sketching' },
+        image: { urlSmall: 'sketching-big.png', urlBig: 'sketching-big.png', alt: 'Musearch - sketching' },
       },
       {
         title: 'WIREFRAMING',
@@ -391,7 +391,7 @@ export const content = {
           'The next step was to create mid-fidelity prototype. The main goal was to detect possible problems as soon as possible before design details and interactions were at an advanced stage.',
         ],
         image: {
-          urlSmall: 'wireframes-small.png',
+          urlSmall: 'wireframes-big.png',
           urlBig: 'wireframes-big.png',
           alt: 'Musearch - wireframes',
         },
@@ -423,6 +423,15 @@ export const content = {
     logo: {
       url: 'musearch-logo.png',
       alt: 'Musearch - logo',
+    },
+  },
+  loFiPrototype: {
+    title: 'LOW-FIDELITY PROTOTYPE',
+    text: `Applying branding and bringing prototype closer to detailed version. 
+      At this stage I focused on the hierarchy and prioritization of buttons, forms, inputs, checkboxes etc. I started designing cards for various uses. The next important step was to create reusable components`,
+    image: {
+      url: 'lo-fi-prototype.png',
+      alt: 'Musearch - low fidelity prototype',
     },
   },
 };

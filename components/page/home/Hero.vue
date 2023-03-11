@@ -3,12 +3,23 @@
     <h1 class="hero__title">{{ content.header }}</h1>
     <p class="hero__main">{{ content.main }}</p>
     <p class="hero__sub">{{ content.sub }}</p>
-    <NuxtLink to="#projects" class="hero__link">{{ content.linkText }}</NuxtLink>
+    <button class="hero__link" @click="scrollToProjects">{{ content.linkText }}</button>
   </div>
 </template>
 
 <script setup lang="ts">
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
 import { content } from '@/api/data/content/home/hero';
+
+if (process.client) {
+  gsap.registerPlugin(ScrollToPlugin);
+}
+
+function scrollToProjects() {
+  gsap.to(window, { duration: 0.5, scrollTo: { y: '#projects', offsetY: 200 } });
+}
 </script>
 
 <style lang="scss" scoped>
