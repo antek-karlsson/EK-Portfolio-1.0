@@ -4,8 +4,8 @@
     <div v-if="$slots.textBold" class="sub-section__bold" :class="{ 'sub-section__bold--dark': isDark }">
       <slot name="textBold" />
     </div>
-    <div class="sub-section__regular" :class="{ 'sub-section__regular--dark': isDark }">
-      <slot v-if="$slots.textRegular" name="textRegular" />
+    <div v-if="$slots.textRegular" class="sub-section__regular" :class="{ 'sub-section__regular--dark': isDark }">
+      <slot name="textRegular" />
     </div>
   </div>
 </template>
