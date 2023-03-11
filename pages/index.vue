@@ -23,15 +23,12 @@ import { teasers } from '@/api/data/content/home/project-teasers';
 
 <style lang="scss" scoped>
 .home-page {
-  height: 100vh;
+  height: 100%;
   max-width: 1290px;
   margin: 0 auto;
-  margin-top: 7rem;
   margin-bottom: 18.8rem;
-  @include flex(column, center, center);
-
   @include desktop {
-    margin: 0 auto;
+    margin-inline: auto;
   }
 }
 </style>
