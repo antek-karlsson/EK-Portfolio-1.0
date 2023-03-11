@@ -27,7 +27,6 @@ const { title, text, image } = content.loFiPrototype;
   }
 
   &__text {
-    max-width: 57rem;
     align-self: flex-start;
     font-family: $lato;
     font-weight: 300;
