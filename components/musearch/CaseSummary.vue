@@ -73,7 +73,7 @@ if (process.client) {
 }
 
 function scrollToFinalDesign() {
-  gsap.to(window, { duration: 0.01, scrollTo: { y: '#final-design', offsetY: 200 } });
+  gsap.to(window, { duration: 0.01, scrollTo: { y: '#final-design', offsetY: 60 } });
 }
 </script>
 
