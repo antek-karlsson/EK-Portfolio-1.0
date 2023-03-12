@@ -14,8 +14,17 @@ export const teasers: Teaser[] = [
     title: 'Musearch',
     description: `Individual project of a mobile application for searching and discovering museums.`,
     linkText: 'View case study',
-    linkUrl: '/projects/',
+    linkUrl: '/projects/musearch',
     imgUrl: 'musearch-teaser.svg',
     imgAlt: 'Musearch by Ewelina Karlsson',
+  },
+  {
+    id: 2,
+    title: 'Other work',
+    description: `Various visuals and graphics.`,
+    linkText: 'View',
+    linkUrl: '/other',
+    imgUrl: 'musearch-teaser.svg',
+    imgAlt: 'Other work by Ewelina Karlsson',
   },
 ];
