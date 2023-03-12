@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <Hero />
-    <div id="projects">
+    <div id="teasers">
       <ProjectTeaser
         v-for="teaser in teasers"
         :key="teaser.id"

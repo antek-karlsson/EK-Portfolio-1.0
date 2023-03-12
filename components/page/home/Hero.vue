@@ -18,7 +18,7 @@ if (process.client) {
 }
 
 function scrollToProjects() {
-  gsap.to(window, { duration: 0.5, scrollTo: { y: '#projects', offsetY: 60 } });
+  gsap.to(window, { duration: 0.5, scrollTo: { y: '#teasers', offsetY: 60 } });
 }
 </script>
 
