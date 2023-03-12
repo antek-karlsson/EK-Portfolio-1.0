@@ -23,7 +23,7 @@
             >
               projects
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="#">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="/about">
               about me
             </NuxtLink>
             <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="#">
@@ -43,7 +43,7 @@
             >
               projects
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="#">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="/about">
               about me
             </NuxtLink>
             <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="#">
@@ -165,7 +165,7 @@ onUnmounted(() => {
       height: 100vh;
       @include flex(column, flex-start, flex-end);
       position: absolute;
-      top: 12.5rem;
+      top: 12.4rem;
       background-color: $white;
       z-index: 100;
       padding: 2.5rem;
