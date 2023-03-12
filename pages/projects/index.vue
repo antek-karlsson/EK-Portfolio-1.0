@@ -1,7 +1,7 @@
 <template>
-  <div class="home-page">
-    <Hero />
-    <div id="teasers">
+  <div class="projects">
+    <h1 class="projects__heading">projects</h1>
+    <div>
       <ProjectTeaser
         v-for="teaser in teasers"
         :key="teaser.id"
@@ -22,13 +22,24 @@ import { teasers } from '@/api/data/content/home/project-teasers';
 </script>
 
 <style lang="scss" scoped>
-.home-page {
+.projects {
   height: 100%;
   max-width: 1290px;
   margin: 0 auto;
   margin-bottom: 18.8rem;
+
   @include desktop {
     margin-inline: auto;
+  }
+
+  &__heading {
+    @include home-section-padding;
+    font-family: $playfair;
+    font-weight: 600;
+    font-size: 6.4rem;
+    line-height: 1.33;
+    letter-spacing: 0.01rem;
+    color: $navy;
   }
 }
 </style>

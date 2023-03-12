@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="musearch">
     <MusearchCTA />
     <CaseSummary />
     <DiscoveryAndIdeation />
@@ -16,7 +16,7 @@
 <script setup lang="ts"></script>
 
 <style lang="scss" scoped>
-.projects {
+.musearch {
   height: 100%;
 }
 </style>

@@ -18,7 +18,7 @@
           <div class="navbar__links">
             <NuxtLink
               class="navbar__link"
-              :class="{ 'navbar__link--active': currentRoute === '/projects' }"
+              :class="{ 'navbar__link--active': currentRoute.includes('/projects') }"
               to="/projects"
             >
               projects
