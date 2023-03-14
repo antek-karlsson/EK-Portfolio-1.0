@@ -24,7 +24,7 @@ export const teasers: Teaser[] = [
     description: `Various visuals and graphics.`,
     linkText: 'View',
     linkUrl: '/other',
-    imgUrl: 'musearch-teaser.svg',
+    imgUrl: 'other-work.svg',
     imgAlt: 'Other work by Ewelina Karlsson',
   },
 ];

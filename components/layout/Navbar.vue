@@ -26,10 +26,10 @@
             <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="/about">
               about me
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="#">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="/resume">
               resume
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/other' }" to="#">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/other' }" to="/other">
               other work
             </NuxtLink>
           </div>
@@ -43,13 +43,13 @@
             >
               projects
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="/about">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute.includes('/projects') }">
               about me
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="#">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="/resume">
               resume
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/other' }" to="#">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/other' }" to="/other">
               other work
             </NuxtLink>
           </div>

@@ -3,6 +3,7 @@
     <main>
       <Navbar />
       <slot />
+      <div id="modal-target"></div>
       <Footer />
     </main>
   </div>
@@ -12,6 +13,7 @@
 
 <style lang="scss" scoped>
 main {
+  max-width: 100vw;
   background-color: $white;
   margin-block-start: 18.2rem;
 

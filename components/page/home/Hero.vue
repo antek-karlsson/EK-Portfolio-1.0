@@ -1,6 +1,9 @@
 <template>
   <div class="hero">
-    <h1 class="hero__title">{{ content.header }}</h1>
+    <h1 class="hero__title">
+      <span>{{ content.header.greeting }}</span>
+      {{ content.header.text }}
+    </h1>
     <p class="hero__main">{{ content.main }}</p>
     <p class="hero__sub">{{ content.sub }}</p>
     <button class="hero__link" @click="scrollToProjects">{{ content.linkText }}</button>
@@ -34,6 +37,11 @@ function scrollToProjects() {
     font-size: 3.6rem;
     line-height: 1.33;
     letter-spacing: 0.01em;
+
+    span {
+      color: $navy;
+    }
+
     @include desktop {
       font-size: 6.4rem;
     }

@@ -1,19 +1,21 @@
 <template>
-  <button type="button" class="icon-button">
+  <button type="button" class="icon-button" :class="{ 'icon-button--light': light }">
     <IconCarbon:menu v-if="type === 'menu' && !isNavOpen" />
-    <IconCarbon:close v-if="type === 'menu' && isNavOpen" />
+    <IconCarbon:close v-if="(type === 'menu' && isNavOpen) || type === 'close'" />
   </button>
 </template>
 
 <script setup lang="ts">
 interface Props {
-  type?: 'menu' | string;
+  type?: 'menu' | 'close' | string;
   isNavOpen?: boolean;
+  light: boolean;
 }
 
 withDefaults(defineProps<Props>(), {
   type: 'menu',
   isNavOpen: false,
+  light: false,
 });
 </script>
 
@@ -37,13 +39,27 @@ withDefaults(defineProps<Props>(), {
 
   @media (hover: hover) {
     &:hover {
-      // border-color: $color-black;
-      // background-color: $color-white;
-
-      // svg {
-      //   color: $color-black;
-      // }
+      svg {
+        color: $white;
+      }
       cursor: pointer;
+    }
+  }
+
+  &--light {
+    svg {
+      color: $white;
+      font-size: 3rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        svg {
+          color: $navy;
+        }
+        cursor: pointer;
+      }
     }
   }
 }

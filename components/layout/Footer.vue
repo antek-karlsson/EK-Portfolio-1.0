@@ -10,6 +10,13 @@
         <LinkedinIcon class="footer__icon" />
       </a>
     </div>
+    <div class="footer__copyright">
+      <p class="footer__copyright-main"><span>&copy;</span> 2023 Ewelina Karlsson</p>
+      <p class="footer__copyright-sub">designed by Ewelina Karlsson</p>
+      <p class="footer__copyright-sub">
+        built by <a href="https://github.com/Hjalmar-K-sson" target="_blank">Antoni Karlsson</a>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -27,11 +34,11 @@ import LinkedinIcon from '@/assets/icons/linkedin-icon.svg?component';
   color: $rosy-brown;
 
   @include tablet-landscape {
-    padding: 3.2rem 6.4rem;
+    padding-block: 3.2rem;
   }
 
   @include desktop {
-    padding: 4.8rem 15rem;
+    padding-block: 4.8rem;
   }
 
   &__heading {
@@ -68,6 +75,45 @@ import LinkedinIcon from '@/assets/icons/linkedin-icon.svg?component';
     @media (hover: hover) {
       &:hover {
         transform: scale(1.5);
+      }
+    }
+  }
+
+  &__copyright {
+    @include tablet-landscape {
+      align-self: flex-start;
+    }
+  }
+
+  &__copyright-main {
+    font-family: $lato;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  &__copyright-sub {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+
+    a {
+      display: inline-block;
+      background-color: $rosy-brown;
+      padding-inline: 0.5rem;
+      text-decoration: none;
+      color: $navy;
+      font-weight: 600;
+      transition: all 0.3s ease-out;
+
+      @media (hover: hover) {
+        &:hover {
+          transform: scale(1.5);
+          transform-origin: top left;
+        }
       }
     }
   }
