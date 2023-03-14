@@ -20,32 +20,7 @@ withDefaults(defineProps<Props>(), {
 
 <style lang="scss" scoped>
 .project-section {
-  width: 100%;
-  padding: 6.4rem 2.4rem;
-
-  @include tablet {
-    padding: 6.4rem 3.2rem;
-  }
-
-  @include tablet-landscape {
-    padding: 6.4rem 6.4rem;
-  }
-
-  @include desktop {
-    padding: 6.4rem 12.8rem;
-  }
-
-  @include desktop-lg {
-    padding: 6.4rem 25.6rem;
-  }
-
-  @include desktop-xl {
-    padding: 6.4rem 38.4rem;
-  }
-
-  @include desktop-2xl {
-    padding: 6.4rem 76.8rem;
-  }
+  @include section-padding;
 
   &--dark {
     background-color: $sienna;
