@@ -43,7 +43,7 @@
             >
               projects
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute.includes('/projects') }">
+            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="/about">
               about me
             </NuxtLink>
             <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="/resume">

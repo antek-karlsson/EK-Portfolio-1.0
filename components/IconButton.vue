@@ -9,7 +9,7 @@
 interface Props {
   type?: 'menu' | 'close' | string;
   isNavOpen?: boolean;
-  light: boolean;
+  light?: boolean;
 }
 
 withDefaults(defineProps<Props>(), {
