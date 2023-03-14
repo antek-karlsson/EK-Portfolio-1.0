@@ -14,7 +14,7 @@
             <p v-for="(text, textId) in section.texts" :key="textId" class="prototyping__section-text">{{ text }}</p>
           </div>
         </div>
-        <div v-if="section.images" class="prototyping__section-carousel">
+        <div v-if="section.images && !isScreenTablet" class="prototyping__section-carousel">
           <ClientOnly>
             <Swiper
               :modules="modules"
@@ -24,10 +24,18 @@
               @swiper="setSwiper"
             >
               <SwiperSlide v-for="(img, imgId) in section.images" :key="imgId">
-                <img :src="`/img/musearch/${isScreenTablet ? img.urlSmall : img.urlBig}`" :alt="img.alt" />
+                <img :src="`/img/musearch/${img.urlBig}`" :alt="img.alt" />
               </SwiperSlide>
             </Swiper>
           </ClientOnly>
+        </div>
+        <div v-if="section.images && isScreenTablet" class="prototyping__section-images">
+          <img
+            v-for="(img, imgId) in section.images"
+            :key="imgId"
+            :src="`/img/musearch/${img.urlSmall}`"
+            :alt="img.alt"
+          />
         </div>
         <div
           v-if="section.image"
@@ -174,6 +182,14 @@ function setSwiper(swiperInstance: HTMLElement) {
       img {
         width: 100%;
       }
+    }
+  }
+
+  &__section-images {
+    @include flex(column, center, center, 2.4rem);
+
+    img {
+      max-width: 100%;
     }
   }
 }
