@@ -6,15 +6,21 @@ export const content = [
     urlBig: 'weather-app-big.png',
   },
   {
-    name: 'Purrfect',
-    alt: 'Purrfect by Ewelina Karlsson',
-    urlSmall: 'purrfect-small.gif',
-    urlBig: 'purrfect-big.gif',
+    name: 'Cosmetics packaging',
+    alt: 'Cosmetics packaging by Ewelina Karlsson',
+    urlSmall: 'cosmetics-small.png',
+    urlBig: 'cosmetics-big.png',
   },
   {
     name: 'Birds in Art',
     alt: 'Birds in Art poster by Ewelina Karlsson',
     urlSmall: 'birds-small.png',
     urlBig: 'birds-big.png',
+  },
+  {
+    name: 'Purrfect',
+    alt: 'Purrfect by Ewelina Karlsson',
+    urlSmall: 'purrfect-small.gif',
+    urlBig: 'purrfect-big.gif',
   },
 ];
