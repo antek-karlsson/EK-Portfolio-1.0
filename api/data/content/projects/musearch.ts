@@ -443,7 +443,7 @@ export const content = {
       },
       {
         title: 'What are my thoughts?',
-        text: 'Based on the finding from both research and potential users’ opinions I were able to locate and make minor adjustments. In order for this application to make sense as a product, it is necessary to integrate it with cultural institutions and facilities, both private and public. Possible further development would require strong business case and investors.',
+        text: 'Based on the finding from both research and potential users’ opinions I was able to locate and make minor adjustments. In order for this application to make sense as a product, it is necessary to integrate it with cultural institutions and facilities, both private and public. Possible further development would require strong business case and investors.',
       },
       {
         title: 'Next steps',
