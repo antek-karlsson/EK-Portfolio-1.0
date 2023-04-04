@@ -1,5 +1,11 @@
 export const content = [
   {
+    name: 'Alphapure',
+    alt: 'Alphapure by Ewelina Karlsson',
+    urlSmall: 'alfapure-small.png',
+    urlBig: 'alfapure-big.png',
+  },
+  {
     name: 'Weather App',
     alt: 'Weather app by Ewelina Karlsson',
     urlSmall: 'weather-app-small.png',
