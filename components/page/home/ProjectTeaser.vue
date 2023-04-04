@@ -6,7 +6,8 @@
     <div class="project-teaser__text">
       <h2 class="project-teaser__title">{{ title }}</h2>
       <p class="project-teaser__description">{{ description }}</p>
-      <NuxtLink class="project-teaser__link" :to="linkUrl">{{ linkText }}</NuxtLink>
+      <NuxtLink v-if="linkUrl" class="project-teaser__link" :to="linkUrl">{{ linkText }}</NuxtLink>
+      <p v-else class="project-teaser__link project-teaser__link--disabled">Coming soon!</p>
     </div>
   </div>
 </template>
@@ -109,6 +110,11 @@ defineProps<{
         color: $dark-gray;
         border-color: $dark-gray;
       }
+    }
+
+    &--disabled {
+      border: none;
+      color: $navy;
     }
   }
 }

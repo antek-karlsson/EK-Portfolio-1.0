@@ -2,8 +2,8 @@ export interface Teaser {
   id: number;
   title: string;
   description: string;
-  linkText: string;
-  linkUrl: string;
+  linkText?: string;
+  linkUrl?: string;
   imgUrl: string;
   imgAlt: string;
 }
@@ -20,6 +20,13 @@ export const teasers: Teaser[] = [
   },
   {
     id: 2,
+    title: 'RheumApp',
+    description: `Individual project of a mobile application for chronic rheumatic disease patients.`,
+    imgUrl: 'rheumapp-teaser.png',
+    imgAlt: 'RheumApp by Ewelina Karlsson',
+  },
+  {
+    id: 3,
     title: 'Other work',
     description: `Various visuals and graphics.`,
     linkText: 'View',
