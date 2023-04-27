@@ -22,6 +22,8 @@ export const teasers: Teaser[] = [
     id: 2,
     title: 'RheumApp',
     description: `Individual project of a mobile application for chronic rheumatic disease patients.`,
+    linkText: '',
+    linkUrl: '',
     imgUrl: 'rheumapp-teaser.png',
     imgAlt: 'RheumApp by Ewelina Karlsson',
   },
