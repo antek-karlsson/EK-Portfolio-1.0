@@ -24,9 +24,8 @@ const brandText = content.cta.brand.text;
 .cta {
   @include flex(column, space-between, center, 0);
   width: 100%;
-  height: 120rem;
-  //TODO: replace bg-image
-  background-image: url('/img/rheumapp/rheumapp-cta-1440.png');
+  height: 115rem;
+  background-image: url('/img/rheumapp/rheumapp-cta-600.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -34,76 +33,98 @@ const brandText = content.cta.brand.text;
 
   @include tablet {
     padding: 5.6rem 2.5rem 8rem 2.5rem;
-    height: 98rem;
+    height: 92rem;
     //TODO: replace bg-image
-    background-image: url('/img/rheumapp/rheumapp-cta-1440.png');
+    background-image: url('/img/rheumapp/rheumapp-cta-900.png');
   }
 
   @include tablet-landscape {
-    @include flex(row-reverse, space-between, center, 0);
+    justify-content: center;
+    gap: 4.8rem;
     height: 75rem;
     background-image: url('/img/rheumapp/rheumapp-cta-1440.png');
     padding: 5.6rem 4.8rem;
   }
 
   @include desktop {
+    flex-direction: row-reverse;
+    justify-content: space-between;
     padding: 5.6rem 9.6rem;
   }
 
   @include desktop-lg {
     padding: 8rem 15rem;
-    //TODO: replace bg-image
-    background-image: url('/img/rheumapp/rheumapp-cta-1440.png');
+    justify-content: center;
+    gap: 25.6rem;
+    background-image: url('/img/rheumapp/rheumapp-cta-2467.png');
     height: 90rem;
   }
 
   @include desktop-xl {
     padding: 8rem 25.6rem;
-    height: 100rem;
   }
 
   @include desktop-2xl {
     padding: 8rem 46rem;
-    height: 180rem;
+    justify-content: space-between;
+    height: 120rem;
   }
 
   &__section {
     @include flex($direction: column, $gap: 2.4rem);
 
-    @include tablet-landscape {
-      max-width: 45rem;
+    @include tablet {
+      align-self: flex-end;
+    }
+
+    @include desktop {
       align-self: flex-start;
     }
 
     &--brand {
+      @include tablet {
+        align-self: flex-start;
+      }
+
       @include tablet-landscape {
-        max-width: 51.7rem;
+        max-width: 45rem;
         align-self: flex-end;
       }
     }
   }
 
   &__section-title {
+    text-align: right;
+    align-self: flex-end;
+    max-width: 25rem;
     font-family: $playfair;
     font-weight: 600;
     font-size: 3.2rem;
     line-height: 1.33;
     letter-spacing: -0.05em;
     color: $ra-white;
-    margin-bottom: 24rem;
+    margin-block-start: 8.6rem;
+    margin-block-end: 18rem;
 
     @include tablet {
+      text-align: left;
+      margin-block-start: 0;
+      max-width: 30rem;
       font-size: 4rem;
-      margin-bottom: 24rem;
+      margin-block-end: 3.6rem;
     }
 
     @include tablet-landscape {
-      margin-bottom: 0;
+      text-align: center;
+      max-width: 100%;
+      margin-block-end: 0;
     }
 
     &--brand {
+      align-self: flex-start;
       font-size: 5.2rem;
-      margin-bottom: 0;
+      margin-block-start: 0;
+      margin-block-end: 0;
     }
   }
 
@@ -115,12 +136,23 @@ const brandText = content.cta.brand.text;
     letter-spacing: 0.01em;
     color: $ra-white;
 
+    @include tablet {
+      max-width: 28rem;
+    }
+
+    @include tablet-landscape {
+      max-width: 43rem;
+    }
+
     @include desktop {
       font-size: 2rem;
     }
 
     &:nth-child(4) {
-      margin-block-start: 6.4rem;
+      // margin-block-start: 4.8rem;
+      @include desktop {
+        margin-block-start: 6.4rem;
+      }
     }
 
     &--brand {
