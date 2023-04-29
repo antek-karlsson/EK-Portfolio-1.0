@@ -48,21 +48,13 @@ export const content = {
           `Another critical feature of the RheumApp is its ability to facilitate better cooperation between patients and doctors. By collecting and transferring information related to the user's disease management, the application can help healthcare providers gain a more comprehensive understanding of the user's condition and make more informed treatment decisions. This information-sharing can also help patients become more engaged in their own care and make more informed decisions about their treatment plan.`,
         ],
       },
-      {
-        title: `Enhancing everyday living`,
-        text: `Keep track of your symptoms, medication and appointments in one place and get personalized tips on diet and excercise to help manage your condition`,
-        logo: ``,
-        image: ``,
-      },
     ],
-    images: [
-      { url: 'case-summary-1.png', alt: 'Onboarding step 1' },
-      { url: 'case-summary-2.png', alt: 'Onboarding step 2' },
-      { url: 'case-summary-3.png', alt: 'Onboarding step 3' },
-      { url: 'case-summary-4.png', alt: 'Onboarding step 4' },
-      { url: 'case-summary-5.png', alt: 'Onboarding step 5' },
-      { url: 'case-summary-6.png', alt: 'Onboarding step 6' },
-    ],
+    hero: {
+      title: `Enhancing everyday living`,
+      text: `Keep track of your symptoms, medication and appointments in one place and get personalized tips on diet and excercise to help manage your condition`,
+      logo: { url: 'rheumapp-logo.png', alt: 'Rheumapp - logo' },
+      image: { url: 'case-summary-ra.png', alt: 'Rheumapp by Ewelina Karlsson' },
+    },
     processHighlights: [
       {
         title: 'ROLE',
@@ -80,6 +72,7 @@ export const content = {
   },
   designProcess: {
     title: 'Design process',
+    image: { url: 'design-process-ra.png', alt: 'Design process - Rheumapp' },
     steps: [
       {
         title: 'Empathize',
