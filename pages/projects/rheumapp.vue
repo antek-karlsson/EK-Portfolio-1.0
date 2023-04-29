@@ -1,6 +1,7 @@
 <template>
   <div class="rheumapp">
     <RheumappCTA />
+    <RACaseSummary />
   </div>
 </template>
 
