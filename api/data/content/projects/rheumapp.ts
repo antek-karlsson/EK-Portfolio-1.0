@@ -96,189 +96,253 @@ export const content = {
       },
     ],
   },
-  // TODO: Update all sections below
   discovery: {
     title: 'Discovery and Ideation',
+    step: 'STEP: EMPATHIZE',
     subSections: [
       {
         texts: [
-          'The purpose of this research is to understand the needs and requirements of different types of museum-goers in order to design a user-friendly mobile application that will meet their needs and expectations. The research will also help to identify potential user personas and use cases, which will inform the design of the app’s interface, features, and functionality. The research will also provide insights into the target audience’s pain points and desires, which will help to ensure that the app is user-centered and meets the needs of a wide range of museum-goers.',
-          'Bearing in mind the needs of the user, we cannot forget about the other side. During the research, I want to determine how the use of the application can affect the development of cultural facilities, especially those smaller and less known that may seem less attractive to tourists.',
+          `The purpose of this research is to understand the needs and requirements of people suffering from chronic rheumatic diseases, in order to design a user-friendly mobile application that will meet their needs and expectations. The research will also help to identify potential user personas and use cases, which will inform the design of the app's interface, features, and functionality.`,
+          `The research will focus on identifying the pain points and difficulties experienced by people with rheumatic diseases in their daily lives, such as tracking their symptoms, managing medication, and scheduling appointments with healthcare providers. By understanding the needs and challenges of this target audience, RheumApp can be designed to address these specific pain points and provide helpful solutions for everyday living.`,
+          `Ultimately, the research will help to create a user-centered application that meets the needs of people with rheumatic diseases, while also providing valuable insights into how technology can be used to improve the lives of those living with chronic illnesses.`,
         ],
       },
       {
         title: 'Competitive research',
         texts: [
           'Competitor analysis is an important step in the design and development of a mobile application. It helps to understand the market and identify the strengths and weaknesses of existing solutions, which can inform the design of the new app.',
-          'I focused on the analysis of two competitors, one of them is highly recognizable around the world, the other is definitely less popular but its functionality is more suitable for our product for comparison purposes.',
+          'The market is full of health apps. Often, such applications are geared towards the largest possible group of users, because they are quite universal and do not address a specific problem. I focused on the analysis of three competitors, who are most concerned with rheumatic diseases.',
         ],
         competitors: [
           {
-            name: 'Tripadvisor.com',
+            name: 'MyRA',
             strengths: {
               title: 'Strengths',
-              items: ['large catalogue', 'recognition', 'many photos', 'recommendations', 'reviews'],
+              items: [
+                'developed by a reputable organization in the field',
+                'tracking symptoms and medication',
+                'educational resources',
+              ],
             },
             weaknesses: {
               title: 'Weaknesses',
               items: [
-                'no info about current exhibitions, events and art',
-                'many complaints from users about reservation system (errors and invalid tickets',
-                'some admission info is invalid',
-                'to see more about museum you have to visit a page sometimes hard to navigate and search for specific results',
-                'better for tourists than just art lovers',
+                'focused on rheumatoid arthritis',
+                'technical issues reported by some users',
+                'UI can be confusing for some users',
               ],
             },
           },
           {
-            name: 'whichmuseum.nl',
+            name: 'ArthritisPower',
             strengths: {
               title: 'Strengths',
               items: [
-                'well-developed museum classification system',
-                'reviews',
-                'user friendly, not overcomplicated',
-                'navigation',
+                'variety of features (symptom and medication tracking, connecting with healthcare providers)',
+                'compatible with wearable devices',
+                'collected data used for research purposes',
+              ],
+            },
+            weaknesses: {
+              title: 'Weaknesses',
+              items: ['user interface can be overwhelming', 'no customization of symptoms', 'limited availability'],
+            },
+          },
+          {
+            name: 'Healthline',
+            strengths: {
+              title: 'Strengths',
+              items: [
+                'wide range of health-related information (including articles)',
+                'access to healthcare providers (telemedicine system)',
+                'symptom, medication and appointments tracking',
               ],
             },
             weaknesses: {
               title: 'Weaknesses',
               items: [
-                'only some places have ticket booking options',
-                'some admission info is invalid',
-                'only 30 countries available',
-                'advanced search is not reliable',
-                'no/invalid info about current exhibitions, events and art',
+                'not specifically designed for arthritis patients',
+                'overwhelming for some users',
+                'limited availability (telemedicine)',
               ],
             },
           },
         ],
       },
       {
-        title: 'Research',
+        title: 'Research and Survey',
         texts: [
-          `I started by researching the existing market tailored for tourists and art lovers. I invited our potential users to answer open-ended questions and share their habits and experiences. After questionnaires and multiple forum reviews, I gathered 34 responses, mostly from groups related to the topic on social media. This allowed me to take a broader look at people's expectations, which differ depending on their attitude to culture and art, as well as the inconveniences they have experienced in the past.`,
-          `I was able to choose and highlight several user profiles that represent different approaches. During the interviews, I learned that the key to attracting people to museums and art institutions is to make it easy for them to find a place that interests them and then get all the information in a quick and uniform way. For people already associated with art, additional functionality is important, such as news and notifications about upcoming exhibitions.`,
-          `To get a better understanding of the audience, I chose 5 participants who represent the users.`,
+          `
+            I started by researching many thematic groups on social media platforms. 
+            Groups bring together thousands of people with rheumatic diseases. 
+            Users share their observations, opinions and ask many questions.
+          `,
+          `
+            It was these questions (and answers) that made me realize that patients still know too little about their disease and do not know where to look for this knowledge. 
+            I invited our potential users to answer closed-ended and open-ended questions and share their habits and experiences.
+          `,
+          `
+            After questionnaires and multiple forum reviews, I gathered 56 responses, mostly from groups related to the topic on social media. 
+            This allowed me to take a broader look at people's expectations.
+          `,
         ],
+        charts: [
+          {
+            title: 'How often do you see a rheumatologist?',
+            image: { url: 'chart-ra-1.png', alt: 'Chart - Rheumatologist visit frequency' },
+          },
+          {
+            title: 'Do you ever forget to take your medicine?',
+            image: { url: 'chart-ra-2.png', alt: 'Chart - Remembering medication' },
+          },
+          {
+            title:
+              'Do you ever feel "blank" when visiting a doctor and forget to tell the doctor about various symptoms or worries that have occurred since your last visit?',
+            image: { url: 'chart-ra-3.png', alt: 'Chart - Remembering symptoms' },
+          },
+          {
+            title:
+              'Do you carry out any observation of your health condition to provide the collected information to the doctor?',
+            image: { url: 'chart-ra-4.png', alt: 'Chart - Health condition observation' },
+          },
+          {
+            title:
+              'Do you feel confused by the amount of different (often contradictory) information about the disease and treatment coming from many sources?',
+            image: { url: 'chart-ra-5.png', alt: 'Chart - Information overflow' },
+          },
+          {
+            title:
+              'If a mobile application was designed, which would be both a reliable source of knowledge about the disease and could monitor your health, would you be interested in using it?',
+            image: { url: 'chart-ra-6.png', alt: 'Chart - application interest' },
+          },
+          {
+            title: 'How do you assess the knowledge provided by the doctor during a medical appointment?',
+            image: { url: 'chart-ra-7.png', alt: 'Chart - Doctor knowledge assessment' },
+          },
+          {
+            title: 'What sources of knowledge do you use?',
+            image: { url: 'chart-ra-8.png', alt: 'Chart - knowledge sources' },
+          },
+        ],
+        results: {
+          title: 'From the survey results, I found out that:',
+          items: [
+            `Patients have a problem with providing information and symptoms to the doctor. This is probably due to the long time between appointments and inaccurate monitoring (or no monitoring at all).`,
+            `Patients feel overwhelmed by the amount of different information. They often do not know where to look for knowledge or they get it from unreliable sources (social media, general interest websites etc.)`,
+            `Patients do not feel sufficiently informed by their doctor. They feel rushed during the visit, lack of commitment and lack of initiative.`,
+          ],
+        },
       },
+      // TODO: Update all sections below
       {
         title: 'Interviews',
+        texts: [
+          `To get a better understanding of the audience, I chose 4 participants who represent the users.`,
+          `I was able to choose and highlight several user profiles that represent different approaches. During the interviews, I learned that the key to design user-centered application is to take into account easy-to-use interface, reminders and notifications, reliable information and monitoring (with sharing option). Several interviewees expressed a desire to share data with their healthcare providers during appointments. This could be a valuable feature of product, as it could help facilitate more informed discussions between patients and providers.`,
+        ],
         interviews: [
           {
-            person: 'Linda, 40',
+            person: 'Rick, 75',
             interview: [
               {
-                question: 'Can you tell us a little bit about yourself and your experience with museum-related apps?',
-                answer:
-                  'Sure, I’m a 40-year-old and I have three kids. I like to plan fun and educational activities for my family and spend a lot of time together.',
+                question: `Can you tell me a bit about yourself and your experience with rheumatic disease?`,
+                answer: `I'm a retired teacher and I've been dealing with rheumatoid arthritis for the past 20 years. I try to stay active and do some gentle exercises every day. I also take my medications as prescribed by my doctor.`,
               },
               {
-                question: 'How do you usually plan your museum visits?',
-                answer: `I usually do a bit of research online, or I ask friends and family for recommendations. I also like to check the museum's website to see if they have any special exhibitions or events that might be of interest to my kids.`,
+                question: 'Can you tell me a little bit about your experience with technology and smartphones?',
+                answer: `Oh, I'm not very good with all those fancy new gadgets. But my granddaughter helped me set up a smartphone so I can make calls and send messages.`,
+              },
+              {
+                question: 'Have you ever used any health-related apps on your phone?',
+                answer: `No, I haven't. I don't really trust them, to be honest.`,
               },
               {
                 question:
-                  'How do you think a new app designed specifically for searching museums around the world would benefit you?',
-                answer:
-                  'I think a new app like this would be incredibly helpful. It would make it easier for me to find and plan museum visits for my family, as I would have all the information I need in one place. I need a quick access to everything. Children are very impatient.',
+                  'What would you like to see in a health-related app that would make you feel more comfortable using it?',
+                answer: `Well, I don't want anything too complicated. Just something that I can easily navigate and understand. And it would be nice if it reminded me when it's time to take my medications. And if I could share my information with my doctor on my medical appointments.`,
               },
               {
-                question: 'What features would you like to see in such an app?',
-                answer: `I would like to see a location-based search function, so I can easily find museums near us. I’d also like to see a way to filter results based on age-appropriate exhibits and events for kids. And finally, it would be great if the app had a way for me to purchase tickets for the whole family, without having to leave the app or wait in line with the kids.`,
+                question: `That's a great suggestion. How often do you have medical appointments?`,
+                answer: `Oh, quite often. I see my doctor every two or three months.`,
+              },
+              {
+                question: `And do you usually bring any information or notes to your appointments?`,
+                answer: `Yes, I try to write down everything I can remember about my symptoms and how I'm feeling. But sometimes I forget things, and it's hard to remember everything when I'm at the doctor's office.`,
+              },
+              {
+                question: `With an app, you could keep track of your symptoms and medications in one place, and easily share that information with your doctor. Would that be helpful?`,
+                answer: `Yes, it would. As long as it's not too complicated to use. And if it could give me some notifications, that would be great too.`,
               },
             ],
           },
           {
-            person: 'Alex, 21',
+            person: 'Janet, 35',
             interview: [
               {
-                question: 'Can you tell us a little bit about yourself and your experience with museum-related apps?',
-                answer: `Sure, I’m a 21-year-old art student and I love visiting museums. I have a particular interest in one museum, and I visit it very often.`,
+                question: `Can you start by telling me a little bit about your experience with your condition?`,
+                answer: `Of course. I've been dealing with my condition for a few years now, and it's been a struggle to keep track of my symptoms and how I'm feeling on a day-to-day basis.`,
               },
               {
-                question: 'How do you usually keep up to date with news and events at your favorite museum?',
-                answer: `I usually check their website or social media accounts, but I find it can be a bit time-consuming. I’d like to have all the information I need in one place, so I can quickly see what’s new.`,
+                question: `I see. Have you tried keeping a symptom diary or journal to help with that?`,
+                answer: `Yes, I've tried to do that in the past, but I always seem to fall off track and forget to keep up with it.`,
               },
               {
-                question:
-                  'How do you think a new app designed specifically for searching museums around the world would benefit you?',
-                answer: `I think a new app like this would be incredibly helpful, as it would give me all the information I need about my favorite museum in one place. If the app was user-friendly and had all the information I need, I would use it all the time.`,
+                question: `How does that impact your visits to the doctor?`,
+                answer: `It can be difficult. I feel like I have a hard time remembering everything that's been going on with my symptoms, so I worry that I'm not able to give my doctor the full picture.`,
               },
               {
-                question: 'What features would you like to see in such an app?',
-                answer: `I would like to see a way to save my favorite museum, so I can quickly access information about it. I’d also like to see a section for news and events, so I can stay up to date with what’s happening at my favorite museum. And finally, it would be great if the app had a way for me to purchase tickets directly, without having to leave the app.`,
+                question: `That's a valid concern. How do you think an app like RheumApp could help with that?`,
+                answer: `Interviewee: I think it could be really helpful to have everything in one place and easily accessible. I like the idea of being able to track my symptoms and even set reminders to take my medications. And if I can have all of that information with me at my next doctor's appointment, I feel like I could have a more productive conversation with my doctor.`,
+              },
+              {
+                question: `Is there anything in particular that you would want the app to include or any features that you think would be especially helpful?`,
+                answer: `I think it would be really helpful to have a way to log my activities or daily routine, like how much I'm exercising or what I'm eating, to see if that's affecting my symptoms. And if the app could help me organize all of that information in a way that's easy to understand, that would be great.`,
               },
             ],
           },
           {
-            person: 'Abraham, 70',
+            person: 'Tom, 23',
             interview: [
               {
-                question: 'Can you tell us a little bit about yourself and your experience with museum-related apps?',
-                answer: `Sure, I’m a 70-year-old retired person and I enjoy visiting museums. However, I have some mobility issues and use a wheelchair, so I need to plan my visits carefully.`,
+                question: `Can you tell me about your experience with managing your chronic rheumatic disease?`,
+                answer: `Sure. It can be challenging at times to manage my symptoms, especially when I'm busy with work or other activities. But I'm pretty tech-savvy, so I use a lot of apps to help me stay on top of things.`,
               },
               {
-                question: 'How do you usually plan your museum visits?',
-                answer: `I usually ask friends for recommendationsand I do a bit of research online. I also like to check if the museum is accessible for wheelchairs and if they have any special facilities or services available.`,
+                question: `Have you used any apps specifically for managing your chronic rheumatic disease?`,
+                answer: `No, not really. I've tried a few, but they were all pretty clunky and hard to use. I feel like there's definitely a need for a better app that can help me track my symptoms, medications, and appointments in an easy and intuitive way.`,
               },
               {
-                question:
-                  'How do you think a new app designed specifically for searching museums around the world would benefit you?',
-                answer: `I think a new app like this would be incredibly helpful, as it would make it easier for me to plan my museum visits. If the app had a clear and user-friendly search function, with information about accessibility and special facilities, I would be able to quickly find museums that I can visit without any issues.`,
+                question: `What features would be most helpful to you in an app for managing your disease?`,
+                answer: `Definitely reminders for medications and appointments, as well as a way to track my symptoms over time. It would also be great if the app could integrate with my fitness tracker so I could see how my activity level is affecting my symptoms.`,
               },
               {
-                question: 'What features would you like to see in such an app?',
-                answer: `I would like to see a location-based search function, so I can easily find museums near me. I’d also like to see a simple way to filter results based on accessibility and facilities for disabled visitors. Also information about parking lots is useful for me. And finally, I’d like to see a clear and easy-to-use ticket purchasing process, with the possibility of having a ticket in the application, and not only in an additional pdf file.`,
+                question: `How important is it for you to have access to educational resources about your disease?`,
+                answer: `It's really important. There's so much information out there, and it can be hard to know what's trustworthy and what's not. I would love to have an app that could provide me with reliable and up-to-date information about my disease, as well as tips for managing my symptoms and living a healthy lifestyle.`,
               },
             ],
           },
           {
-            person: 'Josh, 30',
+            person: 'Jake, 42',
             interview: [
               {
-                question: 'Can you tell us a little bit about yourself and your experience with museum-related apps?',
-                answer: `Sure, I’m a 30-year-old graphic designer and I love visiting museums. I’ve used a few museum-related apps before, but I’ve never been completely satisfied with them.`,
+                question: `Can you start by telling me a bit about yourself and your experience with your condition?`,
+                answer: `Ok, I'm a middle-aged person who has been living with my condition for a few years now. I'm pretty tech-fluent, so I don't have any issues using technology to help manage my condition. However, I do have some trouble with my doctor. He's not very open or talkative, and I feel like I'm not getting all the information I need from him. I only see him about once every four months, so it's tough to keep up with everything on my own.`,
               },
               {
-                question:
-                  'Can you tell us about your experience using those apps? What were the main issues you faced?',
-                answer: `Well, the first issue I had was finding the right museum. The search function wasn’t very intuitive and it was hard to find what I was looking for. Once I found a museum, the information wasn’t always up to date, and I often had to double check with the museum’s website to make sure the hours and prices were correct. Finally, buying tickets was a hassle, as I had to go back and forth between the app and the museum’s website.`,
+                question: `I understand. Can you tell me a bit more about the challenges you face with your doctor?`,
+                answer: `Yeah, so when I see him, he only answers my questions and doesn't really offer any extra information. It's like pulling teeth trying to get him to tell me what I need to know. And then when I leave the appointment, I'm not really sure if I've gotten all the information I need or if I'm doing everything correctly. It can be really frustrating.`,
               },
               {
-                question:
-                  'How do you think a new app designed specifically for searching museums around the world would benefit you?',
-                answer: `I think a new app designed specifically for museums would be a huge improvement. If it had a clear and user-friendly search function, up-to-date information, and a simple ticket purchasing process, I would use it all the time. It would make visiting museums much more enjoyable and stress-free.`,
+                question: `Have you tried looking for information or support online or through social media?`,
+                answer: `I have, but I'm always a bit hesitant to trust the information I find online. There's just so much out there, and it's hard to know what's reliable and what's not. I've looked into some online groups, but I don't feel like I can trust everything I read there either. I just wish there was a way to get reliable information and support without having to rely solely on my doctor.`,
               },
               {
-                question: 'What features would you like to see in such an app?',
-                answer: `I would like to see a location-based search function, so I can easily find museums near me. I’d also like to see a simple way to filter results based on specific keywords, such as “modern art” or “history.” And finally, I’d like to see a clear and easy-to-use ticket purchasing process, without having to leave the app.`,
-              },
-            ],
-          },
-          {
-            person: 'Tony, 25',
-            interview: [
-              {
-                question: 'Can you tell us a little bit about yourself and your experience with museum-related apps?',
-                answer: `Sure, I’m a 25-year-old office worker and I rarely visit museums. I’ve never used a museum-related app before.`,
+                question: `Have you ever used any apps or tools to help manage your condition?`,
+                answer: `Not really, no. I've looked into a few, but I'm not sure if they're really right for me. I need something that can help me keep track of my appointments, remind me to take my medications, and give me reliable information about my condition. I don't want something too complicated, but I also don't want something too basic that won't be helpful.`,
               },
               {
-                question: 'Why do you rarely visit museums?',
-                answer: `To be honest, I just don’t have much interest in them. But, I do like to try new things and visit new places when I’m on vacation.`,
-              },
-              {
-                question: 'How do you usually plan your museum visits when you’re on vacation?',
-                answer: `I usually ask friends and family for recommendations, or just look up popular museums in the area online. But, I don’t really have a specific process for finding museums.`,
-              },
-              {
-                question:
-                  'How do you think a new app designed specifically for searching museums around the world would benefit you?',
-                answer: `I think a new app like this could be really helpful, especially when I’m on vacation and looking for things to do. It would be great to have all of the information I need about museums in one place, so I can easily compare and choose which ones to visit.`,
-              },
-              {
-                question: 'What features would you like to see in such an app?',
-                answer: `I would like to see an easy-to-use search function, where I can filter results based on location and type of museum. I’d also like to see clear and concise information about each museum, including admission prices, hours of operation, and any special exhibitions or events. And finally, it would be great if the app allowed me to purchase tickets directly, so I can save time and avoid lines at the museum.`,
+                question: `If there was an app that could offer all those features and more, would you be interested in trying it out?`,
+                answer: `Definitely. I think an app like that could really help me manage my condition more effectively and give me the information and support I need between appointments. It would be great to have something that's reliable, easy to use, and tailored specifically to my needs.`,
               },
             ],
           },
