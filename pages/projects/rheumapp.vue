@@ -2,6 +2,7 @@
   <div class="rheumapp">
     <RheumappCTA />
     <RACaseSummary />
+    <RADiscoveryAndIdeation />
   </div>
 </template>
 
