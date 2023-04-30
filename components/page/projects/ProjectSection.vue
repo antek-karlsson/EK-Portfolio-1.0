@@ -10,12 +10,13 @@
 interface Props {
   isDark?: boolean;
   double?: boolean;
-  project: 'musearch' | 'rheumapp';
+  project?: 'musearch' | 'rheumapp';
 }
 
 const props = withDefaults(defineProps<Props>(), {
   isDark: false,
   double: false,
+  project: 'musearch',
 });
 
 const bgColorDark = computed(() => {
