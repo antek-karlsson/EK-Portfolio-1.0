@@ -99,12 +99,7 @@ function setSwiper(swiperInstance: HTMLElement) {
   }
 
   &__step {
-    font-family: $lato;
-    font-weight: 600;
-    font-size: 2.2rem;
-    line-height: 1.25;
-    letter-spacing: -0.03em;
-    color: $teal;
+    @include step($teal);
   }
 
   &__competitors {
