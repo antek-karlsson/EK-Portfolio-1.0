@@ -350,67 +350,89 @@ export const content = {
       },
     ],
   },
-  customerJourney: {
-    title: 'So, who are the user personas?',
-    text: `I created two characters based upon interviews to further understand users' needs`,
-    personas: [
-      {
-        name: 'average tourist',
-        motto: '"Ok, we can go"',
-        image: {
-          url: 'average-tourist.png',
-          alt: 'Average tourist persona',
+  userPersona: {
+    step: 'STEP: DEFINE',
+    title: 'So, who is the user persona?',
+    text: `I created one character based upon interviews to further understand users’ needs.`,
+    persona: {
+      name: 'Sarah, 40',
+      title: 'Background',
+      story: `
+          Sarah was diagnosed with rheumatoid arthritis three years ago. 
+          She struggled with the diagnosis at first, but has since come to terms with it and is proactive about managing her condition. 
+          Sarah has a demanding job and a busy family life, but she makes time to attend doctor’s appointments and stay on top of her medications. 
+          She relies heavily on her smartphone to manage her. 
+          Unfortunately, she sometimes forgets to note down her symptoms and thoughts. 
+          Her doctor answers her questions, but often she has trouble asking questions, feeling blank during the visit. 
+          She later searches for information on her own.
+        `,
+      image: {
+        url: 'user-persona-ra.png',
+        alt: 'User Persona - Rheumapp',
+      },
+      properties: [
+        {
+          title: 'Goals and needs',
+          items: [
+            `To manage her condition effectively and minimize its impact on her daily life.`,
+            `To stay informed about the latest developments in RA treatment and research.`,
+            `To connect with others who have RA and share experiences and advice.`,
+            `To be able to track her symptoms and medications easily and accurately.`,
+            `To be able to communicate effectively with her doctor.`,
+          ],
         },
-        properties: [
-          {
-            name: 'Behaviours:',
-            text: 'limited time, wants to have time for various activities during their vacation',
-          },
-          {
-            name: 'Goals:',
-            text: `wants to visit "must-see", doesn't want to waste time in lines`,
-          },
-          {
-            name: 'Needs:',
-            text: 'searching and scheduling according to available information and limited time, quick access and everything in one place',
-          },
-        ],
-      },
-      {
-        name: 'avid art lover',
-        motto: `"I'd love to go!"`,
-        image: {
-          url: 'art-lover.png',
-          alt: 'Art lover persona',
+        {
+          title: 'Frustrations',
+          items: [
+            `She struggles with keeping track of her symptoms.`,
+            `She also finds it difficult to navigate the overwhelming amount of information on the internet about RA, and is unsure which sources to trust.`,
+            `She has had difficulty finding a doctor who is communicative and shows initiative.`,
+          ],
         },
-        properties: [
-          {
-            name: 'Behaviours:',
-            text: 'time-poor, has problem of keeping up to date with news from museums due to time-comsuming research, knows his interests',
-          },
-          {
-            name: 'Goals:',
-            text: 'wants to discover more and broaden interests, be updated',
-          },
-          {
-            name: 'Needs:',
-            text: 'recommendations based on personalized lists, notifications',
-          },
-        ],
-      },
-    ],
-    journeyMaps: [
-      {
-        urlBig: 'average-tourist-journey-big.png',
-        urlSmall: 'average-tourist-journey-small.png',
-        alt: 'Average tourist journey map',
-      },
-      {
-        urlBig: 'art-lover-journey-big.png',
-        urlSmall: 'art-lover-journey-small.png',
-        alt: 'Art lover journey map',
-      },
-    ],
+      ],
+    },
+    empathyMap: {
+      title: 'Empathy map',
+      image: { url: 'empathy-map-ra.png', alt: 'Empathy map - Rheumapp' },
+      sections: [
+        {
+          title: 'SAYS',
+          list: [
+            `"I wish my doctor would give me more information and guidance during appointments."`,
+            `"I often forget to track my symptoms and take my medications."`,
+            `"It's hard to find reliable information about RA online."`,
+            `"I'd like to connect with others who have RA and share experiences."`,
+          ],
+        },
+        {
+          title: 'THINKS',
+          list: [
+            `"I hope my condition doesn't worsen over time."`,
+            `"I wonder if there are better treatment options available."`,
+            `"I worry that I'm not doing enough to manage my condition."`,
+            `"I wonder if my doctor is up-to-date with the latest treatments and research."`,
+          ],
+        },
+        {
+          title: 'DOES',
+          list: [
+            `Tracks symptoms and medications `,
+            `Searches for information about RA online, on social media, blogs etc.`,
+            `Attends doctor's appointments regularly.`,
+            `Shares experiences with others in online RA support groups.`,
+          ],
+        },
+        {
+          title: 'FEELS',
+          list: [
+            `Frustrated when she forgets to track her symptoms and medications.`,
+            `Overwhelmed by the amount of information available online about RA.`,
+            `Anxious about the long-term effects of her condition.`,
+            `Relieved to connect with others who have RA and share experiences.`,
+          ],
+        },
+      ],
+    },
   },
   ideaPrioritisation: {
     title: 'Idea Prioritisation',
