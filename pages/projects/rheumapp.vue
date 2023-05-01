@@ -4,6 +4,7 @@
     <RaCaseSummary />
     <RaDiscoveryAndIdeation />
     <RaUserPersona />
+    <RaIdeaPrioritisation />
   </div>
 </template>
 
