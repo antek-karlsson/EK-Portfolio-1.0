@@ -5,6 +5,7 @@
     <RaDiscoveryAndIdeation />
     <RaUserPersona />
     <RaIdeaPrioritisation />
+    <RaPrototyping />
   </div>
 </template>
 
