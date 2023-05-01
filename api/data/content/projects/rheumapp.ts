@@ -435,27 +435,32 @@ export const content = {
     },
   },
   ideaPrioritisation: {
+    step: 'STEP: IDEATE',
     title: 'Idea Prioritisation',
-    text: 'Hence, I identified the opportunity areas for Musearch:',
+    text: 'Hence, I identified the opportunity areas for RheumApp:',
     ideas: [
       {
-        title: 'Searching as the heart of the application.',
-        items: ['User-specific, detailed filtering of results', 'Precise location for searching "here and now"'],
+        title: 'MyCalendar as main feature',
+        items: [
+          'Viewing data over time',
+          'Tracking symptoms and treatment',
+          'Creating personalized reports that can be shared with doctor',
+        ],
       },
       {
-        title: 'Easy to use for everyone, everywhere.',
+        title: 'Easy to use for everyone',
         items: [
-          'Quick process from selecting a museum to getting a ticket',
-          'Personalized interests and favourites',
+          'Three thematic sections indicated by different colors',
+          'Straightforward navigation, always easily accessible',
           'Accessibility for all age groups',
         ],
       },
       {
-        title: 'Opportunity for deeper involvment.',
+        title: 'Opportunity to gain knowledge',
         items: [
-          'Get personalized recommendation',
-          'Access to multiple sources to increase interest in the arts',
-          'Notifications about exhibitions and events',
+          'Educational resources created and verified by experts',
+          'Access to scientific database, useful links',
+          'Useful lifestyle tips',
         ],
       },
     ],
