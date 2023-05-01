@@ -233,7 +233,6 @@ export const content = {
           ],
         },
       },
-      // TODO: Update all sections below
       {
         title: 'Interviews',
         texts: [
@@ -466,10 +465,11 @@ export const content = {
     ],
   },
   prototyping: {
+    step: 'STEP: PROTOTYPE',
     title: 'Prototyping',
     texts: [
-      'After research and prioritisation of ideas I split my story into a few major user scenarios: registration, finding museum through search by location and making a purchase.',
-      'Then I started digging deeper sketching, wireframing and developing other features. The below previews show major steps taken in the prototyping stage.',
+      'After research and prioritisation of ideas I split my story into a few major user scenarios: registration, creating a shareable repor and entering information via MyCalendar.',
+      'Then I started digging deeper sketching, wireframing and developing other features. The previews below show major steps taken in the prototyping stage.',
     ],
     subSections: [
       {
@@ -498,7 +498,8 @@ export const content = {
         texts: [
           'After creating user flows I started sketching low-fidelity screens. It helped me to examine and rethink my ideas before putting everything together.',
         ],
-        image: { urlSmall: 'sketching-big.png', urlBig: 'sketching-big.png', alt: 'Musearch - sketching' },
+        // image: { url: 'sketching-big.png', alt: 'Musearch - sketching' },
+        image: { url: '', alt: 'Musearch - sketching' },
       },
       {
         title: 'WIREFRAMING',
@@ -507,8 +508,7 @@ export const content = {
           'The next step was to create mid-fidelity prototype. The main goal was to detect possible problems as soon as possible before design details and interactions were at an advanced stage.',
         ],
         image: {
-          urlSmall: 'wireframes-small.png',
-          urlBig: 'wireframes-big.png',
+          url: 'wireframes-big.png',
           alt: 'Musearch - wireframes',
         },
       },
