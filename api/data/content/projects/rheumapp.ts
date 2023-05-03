@@ -541,12 +541,14 @@ export const content = {
     },
   },
   loFiPrototype: {
-    title: 'LOW-FIDELITY PROTOTYPE',
-    text: `Applying branding and bringing prototype closer to detailed version. 
-      At this stage I focused on the hierarchy and prioritization of buttons, forms, inputs, checkboxes etc. I started designing cards for various uses. The next important step was to create reusable components`,
+    title: 'PROTOTYPES & UI KIT',
+    text: `Applying STYLES and bringing prototype closer to detailed version. 
+      At this stage I focused on the hierarchy and prioritization of buttons, forms, inputs, checkboxes etc. 
+      I started designing cards for various uses. 
+      The next important step was to create reusable components`,
     image: {
-      url: 'lo-fi-prototype.png',
-      alt: 'Musearch - low fidelity prototype',
+      url: 'ui-kit-ra.png',
+      alt: 'Prototypes & UI Kit - Rheumapp',
     },
   },
   outcomes: {
