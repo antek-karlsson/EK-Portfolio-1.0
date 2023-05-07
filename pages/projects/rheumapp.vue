@@ -7,6 +7,7 @@
     <RaIdeaPrioritisation />
     <RaPrototyping />
     <RaBranding />
+    <RaLoFiPrototype />
   </div>
 </template>
 
