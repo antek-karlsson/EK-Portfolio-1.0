@@ -8,6 +8,7 @@
     <RaPrototyping />
     <RaBranding />
     <RaLoFiPrototype />
+    <RaOutcomes />
   </div>
 </template>
 
