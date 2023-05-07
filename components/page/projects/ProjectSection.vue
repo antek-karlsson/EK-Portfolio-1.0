@@ -10,11 +10,25 @@
 interface Props {
   isDark?: boolean;
   double?: boolean;
+  project?: 'musearch' | 'rheumapp';
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   isDark: false,
   double: false,
+  project: 'musearch',
+});
+
+const bgColorDark = computed(() => {
+  if (props.project === 'musearch') {
+    return '#A03F45';
+  }
+
+  if (props.project === 'rheumapp') {
+    return '#007484';
+  }
+
+  return '#A03F45';
 });
 </script>
 
@@ -23,7 +37,7 @@ withDefaults(defineProps<Props>(), {
   @include section-padding;
 
   &--dark {
-    background-color: $sienna;
+    background-color: v-bind(bgColorDark);
   }
 
   &__content {
