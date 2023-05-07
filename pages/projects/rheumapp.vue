@@ -1,8 +1,8 @@
 <template>
   <div class="rheumapp">
     <RheumappCTA />
-    <RaCaseSummary />
-    <RaDiscoveryAndIdeation />
+    <RACaseSummary />
+    <RADiscoveryAndIdeation />
     <RaUserPersona />
     <RaIdeaPrioritisation />
     <RaPrototyping />
