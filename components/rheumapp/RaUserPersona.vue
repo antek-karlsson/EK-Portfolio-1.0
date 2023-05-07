@@ -1,50 +1,54 @@
 <template>
-  <div class="user-persona">
-    <ProjectSection>
-      <h4 class="user-persona__step">{{ step }}</h4>
-      <ProjectSubSection :title="title">
-        <template #textRegular>
-          <p>{{ text }}</p>
-        </template>
-      </ProjectSubSection>
-      <div class="user-persona__showcase">
-        <img class="user-persona__showcase-img" :src="`/img/rheumapp/${persona.image.url}`" :alt="persona.image.alt" />
-        <div class="user-persona__showcase-content">
-          <h5 class="user-persona__showcase-name">{{ persona.name }}</h5>
-          <div class="user-persona__showcase-content-text">
-            <h6 class="user-persona__showcase-title">{{ persona.title }}</h6>
-            <p class="user-persona__showcase-story">{{ persona.story }}</p>
+  <ClientOnly>
+    <div class="user-persona">
+      <ProjectSection>
+        <h4 class="user-persona__step">{{ step }}</h4>
+        <ProjectSubSection :title="title">
+          <template #textRegular>
+            <p>{{ text }}</p>
+          </template>
+        </ProjectSubSection>
+        <div class="user-persona__showcase">
+          <img
+            class="user-persona__showcase-img"
+            :src="`/img/rheumapp/${persona.image.url}`"
+            :alt="persona.image.alt"
+          />
+          <div class="user-persona__showcase-content">
+            <h5 class="user-persona__showcase-name">{{ persona.name }}</h5>
+            <div class="user-persona__showcase-content-text">
+              <h6 class="user-persona__showcase-title">{{ persona.title }}</h6>
+              <p class="user-persona__showcase-story">{{ persona.story }}</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="user-persona__properties">
-        <div v-for="(list, id) in persona.properties" :key="id" class="user-persona__properties-list">
-          <h6 class="user-persona__properties-title">{{ list.title }}</h6>
-          <ul>
-            <li v-for="(item, idx) in list.items" :key="idx" class="user-persona__properties-item">{{ item }}</li>
-          </ul>
-        </div>
-      </div>
-      <div class="user-persona__empathy-map">
-        <ProjectSubSection :title="empathyMap.title" />
-        <div v-if="isTabletLandscape" class="user-persona__empathy-map-table">
-          <div v-for="(section, id) in empathyMap.sections" :key="id" class="user-persona__empathy-map-section">
-            <p class="user-persona__empathy-map-title">{{ section.title }}</p>
-            <ul class="user-persona__empathy-map-list">
-              <li v-for="(item, idx) in section.list" :key="idx" class="user-persona__empathy-map-item">
-                {{ item }}
-              </li>
+        <div class="user-persona__properties">
+          <div v-for="(list, id) in persona.properties" :key="id" class="user-persona__properties-list">
+            <h6 class="user-persona__properties-title">{{ list.title }}</h6>
+            <ul>
+              <li v-for="(item, idx) in list.items" :key="idx" class="user-persona__properties-item">{{ item }}</li>
             </ul>
           </div>
-          <img
-            class="user-persona__empathy-map-img"
-            :src="`/img/rheumapp/${empathyMap.image.url}`"
-            :alt="empathyMap.image.url"
-          />
         </div>
-        <div v-else class="user-persona__empathy-map-swiper">
-          <div class="user-persona__empathy-map-swiper-container">
-            <ClientOnly>
+        <div class="user-persona__empathy-map">
+          <ProjectSubSection :title="empathyMap.title" />
+          <div v-if="isTabletLandscape" class="user-persona__empathy-map-table">
+            <div v-for="(section, id) in empathyMap.sections" :key="id" class="user-persona__empathy-map-section">
+              <p class="user-persona__empathy-map-title">{{ section.title }}</p>
+              <ul class="user-persona__empathy-map-list">
+                <li v-for="(item, idx) in section.list" :key="idx" class="user-persona__empathy-map-item">
+                  {{ item }}
+                </li>
+              </ul>
+            </div>
+            <img
+              class="user-persona__empathy-map-img"
+              :src="`/img/rheumapp/${empathyMap.image.url}`"
+              :alt="empathyMap.image.alt"
+            />
+          </div>
+          <div v-else class="user-persona__empathy-map-swiper">
+            <div class="user-persona__empathy-map-swiper-container">
               <Swiper
                 :modules="modules"
                 :slides-per-view="1"
@@ -69,12 +73,12 @@
                 :src="`/img/rheumapp/${empathyMap.image.url}`"
                 :alt="empathyMap.image.url"
               />
-            </ClientOnly>
+            </div>
           </div>
         </div>
-      </div>
-    </ProjectSection>
-  </div>
+      </ProjectSection>
+    </div>
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">

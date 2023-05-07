@@ -2,10 +2,11 @@
   <div class="rheumapp">
     <RheumappCTA />
     <RaCaseSummary />
-    <RaDiscoveryAndIdeation />
+    <RADiscoveryAndIdeation />
     <RaUserPersona />
     <RaIdeaPrioritisation />
     <RaPrototyping />
+    <RaBranding />
   </div>
 </template>
 

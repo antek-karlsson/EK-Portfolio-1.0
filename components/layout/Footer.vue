@@ -21,8 +21,8 @@
 </template>
 
 <script setup lang="ts">
-import BehanceIcon from '@/assets/icons/behance-icon.svg?component';
-import LinkedinIcon from '@/assets/icons/linkedin-icon.svg?component';
+import BehanceIcon from '@/assets/icons/behance-icon.svg?skipsvgo';
+import LinkedinIcon from '@/assets/icons/linkedin-icon.svg?skipsvgo';
 </script>
 
 <style lang="scss" scoped>

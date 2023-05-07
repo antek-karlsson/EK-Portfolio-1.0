@@ -1,22 +1,22 @@
 <template>
-  <ProjectSection>
-    <div class="prototyping">
-      <h3 class="prototyping__step">{{ step }}</h3>
-      <h4 class="prototyping__title">{{ title }}</h4>
-      <ProjectSubSection>
-        <template #textRegular>
-          <p v-for="(text, textId) in texts" :key="textId" class="prototyping__text">{{ text }}</p>
-        </template>
-      </ProjectSubSection>
-      <div v-for="(section, sectionId) in subSections" :key="sectionId" class="prototyping__section">
-        <div class="prototyping__section-card">
-          <h6 class="prototyping__section-title">{{ section.title }}</h6>
-          <div class="prototyping__section-texts">
-            <p v-for="(text, textId) in section.texts" :key="textId" class="prototyping__section-text">{{ text }}</p>
+  <ClientOnly>
+    <ProjectSection>
+      <div class="prototyping">
+        <h3 class="prototyping__step">{{ step }}</h3>
+        <h4 class="prototyping__title">{{ title }}</h4>
+        <ProjectSubSection>
+          <template #textRegular>
+            <p v-for="(text, textId) in texts" :key="textId" class="prototyping__text">{{ text }}</p>
+          </template>
+        </ProjectSubSection>
+        <div v-for="(section, sectionId) in subSections" :key="sectionId" class="prototyping__section">
+          <div class="prototyping__section-card">
+            <h6 class="prototyping__section-title">{{ section.title }}</h6>
+            <div class="prototyping__section-texts">
+              <p v-for="(text, textId) in section.texts" :key="textId" class="prototyping__section-text">{{ text }}</p>
+            </div>
           </div>
-        </div>
-        <div v-if="section.images && !isScreenTablet" class="prototyping__section-carousel">
-          <ClientOnly>
+          <div v-if="section.images && !isScreenTablet" class="prototyping__section-carousel">
             <Swiper
               :modules="modules"
               :slides-per-view="1"
@@ -28,26 +28,26 @@
                 <img :src="`/img/rheumapp/${img.urlBig}`" :alt="img.alt" />
               </SwiperSlide>
             </Swiper>
-          </ClientOnly>
-        </div>
-        <div v-if="section.images && isScreenTablet" class="prototyping__section-images">
-          <img
-            v-for="(img, imgId) in section.images"
-            :key="imgId"
-            :src="`/img/rheumapp/${img.urlSmall}`"
-            :alt="img.alt"
-          />
-        </div>
-        <div
-          v-if="section.image"
-          class="prototyping__section-image"
-          :class="section.title === 'SKETCHING' ? 'prototyping__section-image--sketching' : ''"
-        >
-          <img :src="`/img/rheumapp/${section.image.url}`" :alt="section.image?.alt" />
+          </div>
+          <div v-if="section.images && isScreenTablet" class="prototyping__section-images">
+            <img
+              v-for="(img, imgId) in section.images"
+              :key="imgId"
+              :src="`/img/rheumapp/${img.urlSmall}`"
+              :alt="img.alt"
+            />
+          </div>
+          <div
+            v-if="section.image"
+            class="prototyping__section-image"
+            :class="section.title === 'SKETCHING' ? 'prototyping__section-image--sketching' : ''"
+          >
+            <img :src="`/img/rheumapp/${section.image.url}`" :alt="section.image?.alt" />
+          </div>
         </div>
       </div>
-    </div>
-  </ProjectSection>
+    </ProjectSection>
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">

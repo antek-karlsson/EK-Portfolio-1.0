@@ -522,23 +522,22 @@ export const content = {
     },
     fonts: {
       url: 'fonts.png',
-      alt: 'Musearch - fonts',
+      alt: 'RheumApp - fonts',
     },
     colors: {
-      primary: { title: 'PRIMARY', swatches: ['#A03F45', '#B5777B', '#EBEBEB'] },
+      primary: { title: 'PRIMARY', swatches: ['#1CA5B8', '#9BCCD2', '#DAEBF2'] },
       accents: {
         title: 'ACCENTS',
         swatchGroups: [
-          { colors: ['#AAA993', '#D2D2C1', '#E5E5D9'] },
-          { colors: ['#D7C7C1', '#F2E3DD', '#FFF4EF'] },
-          { colors: ['#9B6670', '#D3A9B1', '#E4D5D8'] },
-          { colors: ['#90A3B4', '#C8D5E1', '#ECF3F9'] },
+          { colors: ['#DE535C', '#FFA6AB', '#FEECED'] },
+          { colors: ['#359FD0', '#7CBCDA', '#D2ECF8'] },
+          { colors: ['#9AC7C7', '#B9E3E1', '#E3F3F3'] },
         ],
       },
     },
     logo: {
-      url: 'musearch-logo.png',
-      alt: 'Musearch - logo',
+      url: 'rheumapp-logo.png',
+      alt: 'RheumApp - logo',
     },
   },
   loFiPrototype: {
