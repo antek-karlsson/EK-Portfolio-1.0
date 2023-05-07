@@ -50,12 +50,21 @@
       <img class="case-summary__hero-img" :src="`/img/rheumapp/${image.url}`" :alt="image.alt" />
     </div>
     <ProjectSection>
+      <ProjectSubSection :title="processHighlights.title" />
       <div class="case-summary__highlights">
-        <div v-for="(highlight, id) in processHighlights" :key="id" class="case-summary__highlight">
+        <div v-for="(highlight, id) in processHighlights.highlights" :key="id" class="case-summary__highlight">
           <h5 class="case-summary__highlight-title">{{ highlight.title }}</h5>
           <p class="case-summary__highlight-text">{{ highlight.text }}</p>
         </div>
       </div>
+    </ProjectSection>
+    <ProjectSection>
+      <ProjectSubSection :title="designProcess.title" />
+      <img
+        class="case-summary__design-process-img"
+        :src="`/img/rheumapp/${designProcess.image.url}`"
+        :alt="designProcess.image.alt"
+      />
     </ProjectSection>
   </div>
 </template>
@@ -65,7 +74,8 @@ import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 import { content } from '@/api/data/content/projects/rheumapp';
-const { title, actionButton, slogan, lightSections, darkSections, processHighlights, hero } = content.caseSummary;
+const { title, actionButton, slogan, lightSections, darkSections, processHighlights, designProcess, hero } =
+  content.caseSummary;
 const { title: heroTitle, text: heroText, logo, image } = hero;
 
 if (process.client) {
@@ -242,6 +252,10 @@ function scrollToFinalDesign() {
     font-size: 1.6rem;
     line-height: 1.5;
     color: $carbon;
+  }
+
+  &__design-process-img {
+    width: 100%;
   }
 }
 
