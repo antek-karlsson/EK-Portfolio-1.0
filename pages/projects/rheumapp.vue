@@ -2,7 +2,7 @@
   <div class="rheumapp">
     <RheumappCTA />
     <RaCaseSummary />
-    <RADiscoveryAndIdeation />
+    <RaDiscoveryAndIdeation />
     <RaUserPersona />
     <RaIdeaPrioritisation />
     <RaPrototyping />
