@@ -51,8 +51,9 @@
       </div>
     </ProjectSection>
     <ProjectSection>
+      <ProjectSubSection :title="processHighlights.title" />
       <div class="case-summary__highlights">
-        <div v-for="(highlight, id) in processHighlights" :key="id" class="case-summary__highlight">
+        <div v-for="(highlight, id) in processHighlights.highlights" :key="id" class="case-summary__highlight">
           <h5 class="case-summary__highlight-title">{{ highlight.title }}</h5>
           <p class="case-summary__highlight-text">{{ highlight.text }}</p>
         </div>
