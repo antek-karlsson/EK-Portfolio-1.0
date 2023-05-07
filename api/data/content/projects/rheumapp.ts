@@ -55,46 +55,49 @@ export const content = {
       logo: { url: 'rheumapp-logo.png', alt: 'Rheumapp - logo' },
       image: { url: 'case-summary-ra.png', alt: 'Rheumapp by Ewelina Karlsson' },
     },
-    processHighlights: [
-      {
-        title: 'ROLE',
-        text: 'research, user flows, sketching, wireframing, visual design, prototyping (Individual project)',
-      },
-      {
-        title: 'PROJECT PLAN',
-        text: `one week of discovery and ideation, followed by a week of prototyping and designing. \n/April 2023`,
-      },
-      {
-        title: 'TOOLS',
-        text: 'Figma, Adobe Illustrator, Adobe AfterEffects',
-      },
-    ],
-  },
-  designProcess: {
-    title: 'Design process',
-    image: { url: 'design-process-ra.png', alt: 'Design process - Rheumapp' },
-    steps: [
-      {
-        title: 'Empathize',
-        subSteps: [`Competitive research`, `Survey`, `User Interviews`],
-      },
-      {
-        title: 'Define',
-        subSteps: [`Interview analysis`, `User Personas`, `Empathy Map`, `Customer Journey Map`],
-      },
-      {
-        title: 'Ideate',
-        subSteps: [`Idea Prioritisation`, `Sketching`, `User flows`],
-      },
-      {
-        title: 'Prototype',
-        subSteps: [`Wireframing`, `Style Guide`, `Low-fidelity prototype`, `UI Kit`, `Final Prototype`],
-      },
-      {
-        title: 'Test',
-        subSteps: [`Feedback`, `Outcomes`],
-      },
-    ],
+    processHighlights: {
+      title: 'Process highlights',
+      highlights: [
+        {
+          title: 'ROLE',
+          text: 'research, user flows, sketching, wireframing, visual design, prototyping (Individual project)',
+        },
+        {
+          title: 'PROJECT PLAN',
+          text: `one week of discovery and ideation, followed by a week of prototyping and designing. \n/April 2023`,
+        },
+        {
+          title: 'TOOLS',
+          text: 'Figma, Adobe Illustrator',
+        },
+      ],
+    },
+    designProcess: {
+      title: 'Design process',
+      image: { url: 'design-process-ra.png', alt: 'Design process - Rheumapp' },
+      steps: [
+        {
+          title: 'Empathize',
+          subSteps: [`Competitive research`, `Survey`, `User Interviews`],
+        },
+        {
+          title: 'Define',
+          subSteps: [`Interview analysis`, `User Personas`, `Empathy Map`, `Customer Journey Map`],
+        },
+        {
+          title: 'Ideate',
+          subSteps: [`Idea Prioritisation`, `Sketching`, `User flows`],
+        },
+        {
+          title: 'Prototype',
+          subSteps: [`Wireframing`, `Style Guide`, `Low-fidelity prototype`, `UI Kit`, `Final Prototype`],
+        },
+        {
+          title: 'Test',
+          subSteps: [`Feedback`, `Outcomes`],
+        },
+      ],
+    },
   },
   discovery: {
     title: 'Discovery and Ideation',
@@ -498,8 +501,7 @@ export const content = {
         texts: [
           'After creating user flows I started sketching low-fidelity screens. It helped me to examine and rethink my ideas before putting everything together.',
         ],
-        // image: { url: 'sketching-big.png', alt: 'Musearch - sketching' },
-        image: { url: '', alt: 'Musearch - sketching' },
+        image: { url: 'sketching-big.png', alt: 'Musearch - sketching' },
       },
       {
         title: 'WIREFRAMING',
@@ -542,7 +544,7 @@ export const content = {
   },
   loFiPrototype: {
     title: 'PROTOTYPES & UI KIT',
-    text: `Applying STYLES and bringing prototype closer to detailed version. 
+    text: `Applying styles and bringing prototype closer to detailed version. 
       At this stage I focused on the hierarchy and prioritization of buttons, forms, inputs, checkboxes etc. 
       I started designing cards for various uses. 
       The next important step was to create reusable components`,
@@ -570,187 +572,167 @@ export const content = {
   },
   finalDesigns: {
     title: 'Final designs',
+    summary: {
+      texts: [
+        `The application has been divided into 3 sections: health monitoring, knowledge base and MyCalendar. Each of them is assigned a different color for easier use and navigation.`,
+        `From the homescreen, we can select the section we are interested in. The navigation bar visible at the bottom of the screen also allows us to select a section, no matter which screen we are currently viewing.`,
+      ],
+      images: [
+        { url: 'summary-1.png', alt: 'Rheumapp - Home Screen' },
+        { url: 'summary-2.png', alt: 'Rheumapp - Welcome Screen' },
+      ],
+    },
     subSections: [
       {
         title: 'Onboarding',
         text: 'Welcome screen and beginning of onboarding with with short content describing the advantages of the application.',
         images: [
           {
-            alt: 'Musearch - onboarding step 1',
+            alt: 'Rheumapp - onboarding step 1',
             url: 'onboarding-1.png',
           },
           {
-            alt: 'Musearch - onboarding step 2',
+            alt: 'Rheumapp - onboarding step 2',
             url: 'onboarding-2.png',
           },
           {
-            alt: 'Musearch - onboarding step 3',
+            alt: 'Rheumapp - onboarding step 3',
             url: 'onboarding-3.png',
           },
           {
-            alt: 'Musearch - onboarding step 4',
+            alt: 'Rheumapp - onboarding step 4',
             url: 'onboarding-4.png',
           },
         ],
       },
       {
         title: 'Registration',
-        text: 'The stages of creating an account are shown on progress bars, quick registration and then personalization of the user by choosing interests. To make it easier for the user to create an account, when password input is activated, the password security rules are shown.',
+        text: 'The stages of creating an account are shown on progress bars, quick registration, personalization and then adding symptoms. Finally, the user should set a 4-digit security code that will restrict access to the application by unauthorized persons. To make it easier for the user to create an account, when password input is activated, the password security rules are shown.',
         images: [
           {
-            alt: 'Musearch - registration step 1',
+            alt: 'Rheumapp - registration step 1',
             url: 'registration-1.png',
           },
           {
-            alt: 'Musearch - registration step 2',
+            alt: 'Rheumapp - registration step 2',
             url: 'registration-2.png',
           },
           {
-            alt: 'Musearch - registration step 3',
+            alt: 'Rheumapp - registration step 3',
             url: 'registration-3.png',
           },
           {
-            alt: 'Musearch - registration step 4',
+            alt: 'Rheumapp - registration step 4',
             url: 'registration-4.png',
           },
           {
-            alt: 'Musearch - registration step 5',
+            alt: 'Rheumapp - registration step 5',
             url: 'registration-5.png',
           },
           {
-            alt: 'Musearch - registration step 6',
+            alt: 'Rheumapp - registration step 6',
             url: 'registration-6.png',
           },
           {
-            alt: 'Musearch - registration step 7',
+            alt: 'Rheumapp - registration step 7',
             url: 'registration-7.png',
           },
           {
-            alt: 'Musearch - registration step 8',
+            alt: 'Rheumapp - registration step 8',
             url: 'registration-8.png',
           },
         ],
       },
       {
-        title: 'Searching by location',
-        text: `Location-based search is the default search method available on the application's home page. After entering the city, available facilities appear. The results can be filtered.`,
+        title: 'Home and navigation',
+        text: `From the home screen, we have access to all three categories as well as to profile, settings and help. The "hamburger menu" icon visible on each screen provides an easy and quick way to change sections and subpages of the application, as well as access to the profile, settings and help. The navigation at the bottom of the screen provides access to the start screen and the three main sections.`,
         images: [
           {
-            alt: 'Musearch - search by location step 1',
-            url: 'search-location-1.png',
+            alt: 'Rheumapp - Home Screen',
+            url: 'home-1.png',
           },
           {
-            alt: 'Musearch - search by location step 2',
-            url: 'search-location-2.png',
+            alt: 'Rheumapp - Home Screen Full',
+            url: 'home-2.png',
           },
           {
-            alt: 'Musearch - search by location step 3',
-            url: 'search-location-3.png',
+            alt: 'Rheumapp - Navigation',
+            url: 'home-3.png',
           },
         ],
       },
       {
-        title: 'Admission',
-        text: 'After choosing a museum, we can get information about opening hours, address and ticket prices. We have access to guides, maps and visit tips. When we decide to visit, we see a preview of the calendar to choose the date and we can choose the number of tickets for each age group. We still have quick access to the most important information related to a visit to the museum.',
+        title: 'Knowledge base',
+        text: 'The knowledge base is divided thematically: general knowledge about the disease, dietary and sports recommendations.',
         images: [
           {
-            alt: 'Musearch - admission step 1',
-            url: 'admission-1.png',
+            alt: 'Rheumapp - Knowledge base search',
+            url: 'knowledge-1.png',
           },
           {
-            alt: 'Musearch - admission step 2',
-            url: 'admission-2.png',
+            alt: 'Rheumapp - Knowledge base disease - details',
+            url: 'knowledge-3.png',
           },
           {
-            alt: 'Musearch - admission step 3',
-            url: 'admission-3.png',
+            alt: 'Rheumapp - Knowledge base - diet',
+            url: 'knowledge-4.png',
+          },
+          {
+            alt: 'Rheumapp - Knowledge base - sport',
+            url: 'knowledge-5.png',
           },
         ],
       },
       {
-        title: 'Purchasing tickets and checkout',
-        subSections: [
-          {
-            text: 'To streamline the process of purchasing tickets, we go straight to checkout. Logged in users have the option to add their payment card for future transactions to make the purchase even more convenient. After the transaction is processed, a confirmation appears. We can go straight to the qr code, which is our purchased tickets. On the screen with the QR code (this screen is also accessible from the bottom navigation) we have access to the most important information and recommended exhibits.',
-            images: [
-              {
-                alt: 'Musearch - checkout step 1',
-                url: 'checkout-1.png',
-              },
-              {
-                alt: 'Musearch - checkout step 2',
-                url: 'checkout-2.png',
-              },
-            ],
-          },
-          {
-            text: 'If we do not have active tickets, we can go straight to search from this view or see available recommendations.',
-            images: [
-              {
-                alt: 'Musearch - checkout step 3',
-                url: 'checkout-3.png',
-              },
-              {
-                alt: 'Musearch - checkout step 4',
-                url: 'checkout-4.png',
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: 'Advanced search',
-        text: 'The advanced search option allows you to search by keywords. We can, for example, find a museum with an exhibition of a specific artist.',
+        title: 'Health monitoring',
+
+        text: 'The user can track their symptoms, add and edit medications, add doctor appointments and set relevant reminders. There is also access to test results or notes.',
         images: [
           {
-            alt: 'Musearch - advanced search step 1',
-            url: 'search-advanced-1.png',
+            alt: 'Rheumapp - Health monitoring',
+            url: 'health-mon-1.png',
           },
           {
-            alt: 'Musearch - advanced search step 2',
-            url: 'search-advanced-2.png',
+            alt: 'Rheumapp - Health monitoring - detailsh',
+            url: 'health-mon-2.png',
           },
           {
-            alt: 'Musearch - advanced search step 3',
-            url: 'search-advanced-3.png',
+            alt: 'Rheumapp - Health monitoring - medication',
+            url: 'health-mon-5.png',
           },
           {
-            alt: 'Musearch - advanced search step 4',
-            url: 'search-advanced-4.png',
+            alt: 'Rheumapp - Health monitoring - medication details',
+            url: 'health-mon-6.png',
+          },
+          {
+            alt: 'Rheumapp - Health monitoring - symptoms',
+            url: 'health-mon-3.png',
+          },
+          {
+            alt: 'Rheumapp - Health monitoring - symptoms details',
+            url: 'health-mon-4.png',
+          },
+          {
+            alt: 'Rheumapp - Health monitoring - appointments',
+            url: 'health-mon-7.png',
           },
         ],
       },
       {
-        title: 'Personalization',
-        subSections: [
+        title: 'MyCalendar',
+        text: 'From the MyCalendar section, user can create a report, which can then be shared to an email address, other applications or saved on the device. Here is a preview of all sections from the health monitoring. The user selects the date he is interested in. He can also go directly to the section from this view to edit it.',
+        images: [
           {
-            images: [
-              {
-                alt: 'Musearch - personalization 1',
-                url: 'personalization-1.png',
-              },
-              {
-                alt: 'Musearch - personalization 2',
-                url: 'personalization-2.png',
-              },
-            ],
+            alt: 'Rheumapp - MyCalendar - calendar',
+            url: 'my-calendar-1.png',
           },
           {
-            text: 'The user can edit their profile picture, account information, payment and security settings. The user also has access to the preview of recently visited museums and has the option of selecting areas of interest.',
-            images: [
-              {
-                alt: 'Musearch - personalization 3',
-                url: 'personalization-3.png',
-              },
-              {
-                alt: 'Musearch - personalization 4',
-                url: 'personalization-4.png',
-              },
-              {
-                alt: 'Musearch - personalization 5',
-                url: 'personalization-5.png',
-              },
-            ],
+            alt: 'Rheumapp - MyCalendar - calendar details',
+            url: 'my-calendar-2.png',
+          },
+          {
+            alt: 'Rheumapp - MyCalendar - report',
+            url: 'my-calendar-3.png',
           },
         ],
       },

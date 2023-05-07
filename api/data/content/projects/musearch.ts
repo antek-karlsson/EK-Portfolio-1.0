@@ -57,20 +57,23 @@ export const content = {
       { url: 'case-summary-5.png', alt: 'Onboarding step 5' },
       { url: 'case-summary-6.png', alt: 'Onboarding step 6' },
     ],
-    processHighlights: [
-      {
-        title: 'ROLE',
-        text: 'research, user flows, sketching, wireframing, visual design, prototyping (Individual project)',
-      },
-      {
-        title: 'PROJECT PLAN',
-        text: 'one week of discovery and ideation, followed by a week of prototyping and designing. /February 2023',
-      },
-      {
-        title: 'TOOLS',
-        text: 'Figma, Adobe Illustrator',
-      },
-    ],
+    processHighlights: {
+      title: 'Process highlights',
+      highlights: [
+        {
+          title: 'ROLE',
+          text: 'research, user flows, sketching, wireframing, visual design, prototyping (Individual project)',
+        },
+        {
+          title: 'PROJECT PLAN',
+          text: 'one week of discovery and ideation, followed by a week of prototyping and designing. /February 2023',
+        },
+        {
+          title: 'TOOLS',
+          text: 'Figma, Adobe Illustrator',
+        },
+      ],
+    },
   },
   discovery: {
     title: 'Discovery and Ideation',
