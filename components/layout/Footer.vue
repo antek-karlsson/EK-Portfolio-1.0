@@ -14,7 +14,7 @@
       <p class="footer__copyright-main"><span>&copy;</span> 2023 Ewelina Karlsson</p>
       <p class="footer__copyright-sub">designed by Ewelina Karlsson</p>
       <p class="footer__copyright-sub">
-        built by <a href="https://github.com/Hjalmar-K-sson" target="_blank">Antoni Karlsson</a>
+        built by <a href="https://github.com/antek-karlsson" target="_blank">Antoni Karlsson</a>
       </p>
     </div>
   </div>
