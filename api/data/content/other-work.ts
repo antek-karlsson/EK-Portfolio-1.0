@@ -1,5 +1,11 @@
 export const content = [
   {
+    name: 'Sushi Menu',
+    alt: 'Sushi Menu by Ewelina Karlsson',
+    urlSmall: 'sushimenu_small.png',
+    urlBig: 'sushimenu_big.jpg',
+  },
+  {
     name: 'Coffeepack Brazil',
     alt: 'Coffeepack Brazil by Ewelina Karlsson',
     urlSmall: 'coffeepackbrazil_small.png',
