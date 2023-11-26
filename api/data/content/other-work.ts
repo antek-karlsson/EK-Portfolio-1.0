@@ -12,6 +12,12 @@ export const content = [
     urlBig: 'coffeepackbrazil_big.png',
   },
   {
+    name: 'Zwierciadlo',
+    alt: 'Graphics for Zwierciadlo Magazine',
+    urlSmall: 'zwierciadlo-small.png',
+    urlBig: 'zwierciadlo-big.png',
+  },
+  {
     name: 'Tiger cloth',
     alt: 'Tiger cloth by Ewelina Karlsson',
     urlSmall: 'tigercloth_small.png',
