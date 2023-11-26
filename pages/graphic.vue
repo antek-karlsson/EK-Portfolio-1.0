@@ -95,6 +95,7 @@ function closeModal() {
   }
 
   &__img {
+    max-width: 338px;
     width: 100%;
     border-radius: 0.4rem;
     box-shadow: 0 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
