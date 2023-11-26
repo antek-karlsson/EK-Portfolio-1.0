@@ -29,8 +29,12 @@
             <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="/resume">
               resume
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/other' }" to="/other">
-              other work
+            <NuxtLink
+              class="navbar__link"
+              :class="{ 'navbar__link--active': currentRoute === '/graphic' }"
+              to="/graphic"
+            >
+              graphic design
             </NuxtLink>
           </div>
         </template>
@@ -49,8 +53,12 @@
             <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="/resume">
               resume
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/other' }" to="/other">
-              other work
+            <NuxtLink
+              class="navbar__link"
+              :class="{ 'navbar__link--active': currentRoute === '/graphic' }"
+              to="/graphic"
+            >
+              graphic design
             </NuxtLink>
           </div>
         </template>
