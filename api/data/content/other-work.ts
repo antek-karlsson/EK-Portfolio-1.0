@@ -6,6 +6,12 @@ export const content = [
     urlBig: 'sushimenu_big.jpg',
   },
   {
+    name: 'CPK',
+    alt: 'CPK by Ewelina Karlsson',
+    urlSmall: 'cpk_small.png',
+    urlBig: 'cpk_big.png',
+  },
+  {
     name: 'Coffeepack Brazil',
     alt: 'Coffeepack Brazil by Ewelina Karlsson',
     urlSmall: 'coffeepackbrazil_small.png',
