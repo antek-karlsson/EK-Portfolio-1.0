@@ -9,15 +9,16 @@ export interface Teaser {
 }
 
 export const teasers: Teaser[] = [
-  {
-    id: 1,
-    title: 'Graphic design',
-    description: `Various visuals and graphics.`,
-    linkText: 'View',
-    linkUrl: '/graphic',
-    imgUrl: 'graphic-design.svg',
-    imgAlt: 'Graphic design work by Ewelina Karlsson',
-  },
+  // Temporarily remove Graphic design from teasers
+  // {
+  //   id: 1,
+  //   title: 'Graphic design',
+  //   description: `Various visuals and graphics.`,
+  //   linkText: 'View',
+  //   linkUrl: '/graphic',
+  //   imgUrl: 'graphic-design.svg',
+  //   imgAlt: 'Graphic design work by Ewelina Karlsson',
+  // },
   {
     id: 2,
     title: 'Musearch',
