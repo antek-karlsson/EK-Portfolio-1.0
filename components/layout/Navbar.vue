@@ -23,19 +23,19 @@
             >
               projects
             </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="/about">
+            <!-- <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/about' }" to="/about">
               about me
-            </NuxtLink>
-            <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="/resume">
+            </NuxtLink> -->
+            <!-- <NuxtLink class="navbar__link" :class="{ 'navbar__link--active': currentRoute === '/resume' }" to="/resume">
               resume
-            </NuxtLink>
-            <NuxtLink
+            </NuxtLink> -->
+            <!-- <NuxtLink
               class="navbar__link"
               :class="{ 'navbar__link--active': currentRoute === '/graphic' }"
               to="/graphic"
             >
               graphic design
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
         </template>
         <template v-if="isScreenMobile">
